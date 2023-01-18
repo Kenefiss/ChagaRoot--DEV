@@ -1,0 +1,79 @@
+/*--------------------*/
+/* - Recommended      */
+/*--------------------*/
+.sec-page-info {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 50px;
+
+  .text {
+    width: 58%;
+    margin-right: auto;
+  }
+
+  .swiper-button-wrap {
+    margin-inline: 50px;
+  }
+}
+
+@media (max-width: 1640px) {
+  .sec-page-info {
+    margin-bottom: 40px;
+
+    .swiper-button-wrap {
+      margin-inline: 35px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .sec-page-info {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    .text {
+      width: 65%;
+    }
+
+    .swiper-button-wrap {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .sec-page-info {
+    .text {
+      width: 100%;
+    }
+  }
+}
+
+/*--------------------*/
+/* - Question Form    */
+/*--------------------*/
+.qst-section {
+  position: relative;
+  padding: 85px 70px;
+  background-color: var(--bg-1);
+  border-radius: var(--rd-1);
+
+  .input-placeholder {
+    background-color: var(--bg-1);
+  }
+}
+
+.qst-form {
+  width: 90%;
+  margin-inline: auto;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+
+
+}

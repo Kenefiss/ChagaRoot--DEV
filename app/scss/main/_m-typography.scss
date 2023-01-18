@@ -1,0 +1,434 @@
+/*--------------------*/
+/* - TYPOGRAPHY       */
+/*--------------------*/
+body {
+  font-family: var(--ff-1);
+  font-weight: 400;
+  font-size: var(--h-5);
+  line-height: 1.2em;
+  color: var(--clr-text);
+}
+
+body * {
+  font-family: var(--ff-1);
+}
+
+strong {
+  font-weight: 600;
+  line-height: inherit;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 500;
+  color: var(--clr-title);
+}
+
+
+h1,
+.h1 {
+  font-size: var(--h-1);
+  line-height: 1.11em;
+}
+
+h2,
+.h2 {
+  font-size: var(--h-2);
+  line-height: 1.11em;
+}
+
+h3,
+.h3 {
+  font-size: var(--h-3);
+  line-height: 1.19em;
+}
+
+h4,
+.h4 {
+  font-size: var(--h-4);
+  line-height: 1.36em;
+}
+
+h5,
+.h5 {
+  font-size: var(--h-5);
+  line-height: 1.38em;
+}
+
+h6,
+.h6 {
+  font-size: var(--h-6);
+  line-height: 1.38em;
+}
+
+.title-margin {
+  margin-bottom: 35px;
+}
+
+.title-page {
+  margin-bottom: 50px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-cut-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-cut-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-cut-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-cut-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media(min-width: 576px) {
+  .text-sm-left {
+    text-align: left;
+  }
+}
+
+@media(max-width: 1640px) {
+  .title-margin {
+    margin-bottom: 25px;
+  }
+
+  .title-page {
+    margin-bottom: 35px;
+  }
+}
+
+@media(max-width: 991px) {
+  .title-margin {
+    margin-bottom: 15px;
+  }
+
+  .title-page {
+    margin-bottom: 20px;
+  }
+}
+
+/*--------------------*/
+/* - TEXT STYLES      */
+/*--------------------*/
+.text {
+  font-size: 18px;
+  line-height: 1.38em;
+  font-weight: 400;
+  color: var(--clr-text);
+  --text-space: 15px;
+
+  *+:where(*) {
+    margin-top: calc(var(--text-space) * 3);
+  }
+
+  *+:is(p, ul, ol, li) {
+    margin-top: var(--text-space);
+  }
+
+  :is(img, table, iframe, figure, picture, blockquote, .swiper-entry)+* {
+    margin-top: calc(var(--text-space) * 3);
+  }
+
+  *+:is(.swiper-entry *) {
+    margin-top: 0;
+  }
+}
+
+.text b {
+  font-weight: 500;
+}
+
+.text b,
+.text span {
+  color: var(--clr-org);
+}
+
+.text strong {
+  font-weight: 600;
+}
+
+.text em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.text a:not(.btn) {
+  display: inline;
+  color: var(--clr-green);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.text ul li,
+.text ol li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.text ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.44em;
+  width: 0.45em;
+  height: 0.45em;
+  border-radius: 100%;
+  background-color: var(--clr-green);
+}
+
+.text ol {
+  counter-reset: number;
+
+  li:before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    counter-increment: number;
+    content: counter(number) ".";
+    color: var(--clr-green);
+    line-height: inherit;
+    font-weight: 500;
+  }
+}
+
+.text img {
+  display: block;
+  width: 100%;
+  border-radius: var(--rd-1);
+}
+
+.text figure {
+  line-height: 0;
+  width: 100% !important;
+
+  &.aligncenter {
+    text-align: center;
+  }
+
+  &.alignright {
+    text-align: right;
+  }
+
+  >img {
+    width: auto;
+  }
+
+  figcaption {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--clr-black);
+  }
+}
+
+.text iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 570px;
+  border: 0;
+  max-height: calc(56.3vw - 20px);
+  border-radius: var(--rd-1);
+}
+
+.text blockquote {
+  text-align: left;
+  font-weight: 500;
+  padding: 45px 70px;
+  color: var(--clr-black);
+  background-color: var(--bg-1);
+  border-radius: var(--rd-1);
+}
+
+.text table {
+  border-collapse: collapse;
+  width: 100%;
+
+  thead,
+  tbody {
+    min-width: 690px;
+  }
+
+  thead {
+    tr {
+      border: none;
+    }
+
+    th,
+    td {
+      height: 50px;
+      font-weight: 500;
+      color: var(--clr-black);
+      background-color: var(--bg-1);
+
+      &:first-child {
+        border-top-left-radius: var(--rd-1);
+      }
+
+      &:last-child {
+        border-top-right-radius: var(--rd-1);
+      }
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid var(--clr-grey);
+    text-align: left;
+  }
+
+  td,
+  th {
+    vertical-align: middle;
+    height: 70px;
+    padding: 5px;
+    font-size: inherit;
+    line-height: 1.38em;
+    font-weight: 400;
+    color: var(--clr-text);
+
+    &:first-child {
+      padding-left: 20px;
+    }
+
+    &:last-child {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .text a:not(.btn):hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+@media(min-width: 2000px) {
+  .text {
+    font-size: 20px;
+
+    iframe {
+      height: 660px;
+    }
+  }
+}
+
+@media(max-width: 1640px) {
+  .text {
+    font-size: 17px;
+    --text-space: 12px;
+  }
+
+  .text ul li,
+  .text ol li {
+    padding-left: 20px;
+  }
+
+  .text table {
+    thead {
+
+      th,
+      td {
+        height: 40px;
+      }
+    }
+
+    td,
+    th {
+      height: 60px;
+
+      &:first-child {
+        padding-left: 15px;
+      }
+
+      &:last-child {
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .text blockquote {
+    padding: 35px 50px;
+  }
+}
+
+@media(max-width: 991px) {
+  .text {
+    font-size: 15px;
+    --text-space: 8px;
+  }
+
+  .text ul li,
+  .text ol li {
+    padding-left: 15px;
+  }
+
+  .text table {
+    thead {
+
+      th,
+      td {
+        height: 35px;
+      }
+    }
+
+    td,
+    th {
+      height: 50px;
+
+      &:first-child {
+        padding-left: 8px;
+      }
+
+      &:last-child {
+        padding-right: 8px;
+      }
+    }
+  }
+
+  .text blockquote {
+    padding: 20px 15px;
+  }
+}

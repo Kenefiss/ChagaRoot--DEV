@@ -1,0 +1,80 @@
+/*--------------------*/
+/* - 404              */
+/*--------------------*/
+.page-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - var(--h-height));
+  margin: 0 !important;
+  padding: 45px 0;
+}
+
+.page-404-wrap {
+  max-width: 980px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.page-404-num {
+  font-weight: 700;
+  font-size: 380px;
+  line-height: 1em;
+  color: var(--clr-grey3);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.page-404-inner {
+  display: flex;
+  align-items: center;
+}
+
+.page-404-inner-right {
+  .title {
+    font-weight: 600;
+  }
+
+  .text {
+    margin-top: 15px;
+  }
+
+  margin-right: 15%;
+}
+
+.page-404-inner-left {
+  flex-shrink: 0;
+}
+
+@media (max-width: 1640px) {
+  .page-404-wrap {
+    max-width: 780px;
+  }
+
+  .page-404-num {
+    font-size: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-404-num {
+    font-size: 160px;
+  }
+
+  .page-404-inner {
+    display: block;
+    text-align: center;
+  }
+
+  .page-404-inner-right {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 374px) {
+  .page-404-num {
+    font-size: 150px;
+  }
+}

@@ -1,0 +1,83 @@
+/*--------------------*/
+/* - RESET */
+/*--------------------*/
+html {
+  overflow-y: scroll;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  line-height: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  -webkit-locale: auto;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar,
+html:not(.touch-screen) *::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar-track,
+html:not(.touch-screen) *::-webkit-scrollbar-track {
+  background: var(--clr-white);
+}
+
+html:not(.touch-screen)::-webkit-scrollbar-thumb,
+html:not(.touch-screen) *::-webkit-scrollbar-thumb {
+  background: var(--clr-green);
+}
+
+:focus,
+:hover,
+:active,
+:visited {
+  outline: none;
+}
+
+button {
+  background: none
+}
+
+body ::selection {
+  color: var(--clr-white);
+  background: var(--clr-prl);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+  transition: var(--transition-1);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+picture {
+  font-size: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

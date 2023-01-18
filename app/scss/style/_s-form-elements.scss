@@ -1,0 +1,323 @@
+/*--------------------*/
+/* - FORM ELEMENTS    */
+/*--------------------*/
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--clr-black);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  height: 0.7em;
+  width: 0.7em;
+  background: url("../img/icons/icon-close.png") no-repeat 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  border-radius: 0;
+  background: none;
+  border: none;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+textarea {
+  display: block;
+  resize: none;
+  overflow: auto;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.input {
+  position: relative;
+  z-index: 1;
+  height: 64px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 64px;
+  padding: 15px;
+  text-align: left;
+  text-overflow: ellipsis;
+  color: var(--clr-black);
+  border-radius: var(--rd-1);
+  border: 1px solid var(--clr-grey);
+  transition: var(--transition-1);
+}
+
+textarea.input {
+  height: 140px;
+  line-height: 1.38em;
+}
+
+.input-placeholder {
+  display: inline-block;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  z-index: 2;
+  top: 0;
+  left: 10px;
+  transform: translateY(23px);
+  --pl-size: 16px;
+  font-size: var(--pl-size);
+  line-height: 1.1em;
+  font-weight: 400;
+  color: var(--clr-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-inline: 5px;
+  background-color: var(--clr-white);
+  transition: var(--transition-1);
+}
+
+.input-field-wrapper {
+  position: relative;
+
+  &.focus .input-placeholder,
+  &.value .input-placeholder {
+    font-size: calc(var(--pl-size) * 0.876);
+    transform: translateY(-7px);
+  }
+
+  :where(.focus) .input {
+    border-color: var(--clr-black);
+  }
+
+  &.invalid:not(.value) .input {
+    border-color: var(--clr-red);
+  }
+}
+
+.form-block {
+  .row {
+    --bs-gutter-x: 20px;
+    --bs-gutter-y: var(--bs-gutter-x);
+  }
+
+  >*+* {
+    margin-top: 20px;
+  }
+}
+
+.form-informer {
+  text-align: left;
+  color: var(--clr-red);
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+@media (max-width: 1640px) {
+
+  .input {
+    height: 56px;
+    line-height: 56px;
+  }
+
+  textarea.input {
+    height: 120px;
+  }
+
+  .input-placeholder {
+    transform: translateY(20px);
+    --pl-size: 16px;
+  }
+
+  .form-block {
+    .row {
+      --bs-gutter-x: 18px;
+    }
+
+    >*+* {
+      margin-top: 18px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .input {
+    height: 52px;
+    line-height: 52px;
+    padding: 10px;
+  }
+
+  textarea.input {
+    height: 110px;
+  }
+
+  .input-placeholder {
+    left: 5px;
+    transform: translateY(19px);
+    --pl-size: 14px;
+  }
+
+  .form-block {
+    .row {
+      --bs-gutter-x: 15px;
+    }
+
+    >*+* {
+      margin-top: 15px;
+    }
+  }
+
+  .form-informer {
+    font-size: 14px;
+  }
+}
+
+/*--------------------*/
+/* - CHECKBOX        */
+/*--------------------*/
+.ch-box-wrap {
+  display: block;
+  text-align: left;
+}
+
+.ch-box-entry {
+  display: inline-block;
+  cursor: pointer;
+  margin-inline: 0;
+  padding: 0;
+  line-height: 0;
+  font-size: 0;
+  min-width: 30px;
+  min-height: 20px;
+
+  input {
+    display: none;
+  }
+
+  span {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-weight: 400;
+    color: var(--clr-text);
+    padding-left: 25px;
+    --s-width: 14px;
+    transition: var(--transition-1);
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: var(--s-width);
+      height: var(--s-width);
+      border: 1px solid var(--clr-input);
+      border-radius: 3px;
+      transition: var(--transition-1);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 7px;
+      width: calc(var(--s-width) - 6px);
+      height: calc(var(--s-width) - 6px);
+      z-index: 1;
+      transform: scale(0);
+      backface-visibility: hidden;
+      border-radius: 3px;
+      background-color: var(--clr-input);
+      transition: var(--transition-1);
+    }
+
+    a {
+      display: inline;
+      color: var(--clr-green);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+    }
+  }
+
+  input[type="radio"]+span:before,
+  input[type="radio"]+span:after {
+    border-radius: 100%;
+  }
+
+  input:checked+span::before {
+    border-color: var(--clr-green);
+  }
+
+  input:checked+span:after {
+    background-color: var(--clr-green);
+    transform: scale(1);
+  }
+}
+
+
+/* Change Autocomplete styles in Chrome*/
+// .input-field-wrapper.focus .input:not(textarea):-webkit-autofill,
+// .input-field-wrapper.value .input:not(textarea):-webkit-autofill,
+// .input-field-wrapper.focus .input:not(textarea):-webkit-autofill:hover,
+// .input-field-wrapper.value .input:not(textarea):-webkit-autofill:hover,
+// .input-field-wrapper.focus .input:not(textarea):-webkit-autofill:focus,
+// .input-field-wrapper.value .input:not(textarea):-webkit-autofill:focus,
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus {
+//   border: 0;
+//   -webkit-text-fill-color: var(--clr-black);
+//   -webkit-box-shadow: inset 0 -3px 0 0 var(--clr-black), inset 0 0 100px var(--bg-2);
+//   transition: background-color 5000s ease-in-out 0s;
+// }
+
+@media (min-width: 1200px) {
+  .ch-box-entry a:not(.btn):hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+@media (max-width: 991px) {
+  .ch-box-entry span {
+    font-size: 16px;
+
+    &:before {
+      top: 3px;
+    }
+
+    &:after {
+      top: 6px;
+    }
+  }
+}
