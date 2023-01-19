@@ -1,0 +1,82 @@
+/*--------------------*/
+/* - CART             */
+/*--------------------*/
+.cart {
+  position: fixed;
+  z-index: 100;
+  top: var(--h-height);
+  right: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.cart-inner {
+  max-width: 458px;
+  margin-left: auto;
+  width: 100%;
+  max-height: 485px;
+  border: 1px solid var(--clr-grey-2);
+  border-radius: var(--rd-1);
+  background-color: var(--clr-white);
+}
+
+.cart-top {}
+
+.title {}
+
+.h5 {}
+
+.btn-close {}
+
+.cart-close {}
+
+.cart_items {}
+
+.cart_prd {}
+
+.js-product {}
+
+.prod_horiz-img {}
+
+.img {}
+
+.imgLoaded {}
+
+.prod_horiz-desc {}
+
+.product_additions {}
+
+.custom_dropdown {}
+
+.custom_dropdown-title {}
+
+.custom_dropdown-toggle {}
+
+.text-sm {}
+
+.prod_horiz-controls {}
+
+.price_default {}
+
+.thumb-input-number {}
+
+.decrement {}
+
+.increment {}
+
+.price-wrap {}
+
+.price {}
+
+.c-empty-message {}
+
+.btn {}
+
+.btn-primary {}
+
+.cart_bottom {}
+
+.c_price-wrap {}
+
+.card-total-price {}

@@ -113,7 +113,8 @@ html.overflow-menu body {
   opacity: 1;
 }
 
-.popup-wrapper {
+.popup-wrapper,
+.cookies-informer {
   display: none;
 }
 
@@ -123,7 +124,7 @@ html.overflow-menu body {
 
 @media (min-width: 1200px) {
   .container {
-    width: 90%;
+    width: 94%;
   }
 }
 

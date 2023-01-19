@@ -74,111 +74,25 @@ jQuery(function($) {
   /* Function on page scroll */
   $(window).on('scroll', function() {
     _functions.scrollCall();
-    _functions.submenuScroll();
   });
 
   var prev_scroll = 0;
   _functions.scrollCall = function() {
     winScr = $(window).scrollTop();
     if (winScr > prev_scroll) {
-      $('.un__btn-up').addClass('scrolled');
+      $('header').addClass('scrolled');
     } else if (winScr <= 10) {
-      $('.un__btn-up').removeClass('scrolled');
+      $('header').removeClass('scrolled');
       prev_scroll = 0;
     };
   }
   _functions.scrollCall();
 
 
-  /* Function on scroll sticky sub menu */
-  _functions.submenuScroll = function() {
-    winScr = $(window).scrollTop();
-
-    if ($('.scroll-nav').length > 0) {
-      let wrapNav = $('.scroll-nav');
-
-      if (winScr + $('header').height() >= $('.scroll-nav-wrap').offset().top) {
-        wrapNav.addClass('fixed');
-      } else {
-        wrapNav.removeClass('fixed');
-      }
-
-      $('.scroll-nav a').each(function(i) {
-        let $t = $(this),
-          scrollPath = $($t.attr('href'));
-
-
-        // console.log($t)
-        // console.log(scrollPath)
-        // console.log(scrollPath.offset().top + 'path top' )
-        // console.log(scrollPath.offset().top - $('header').outerHeight() + 'path top - header')
-        // console.log(winScr)
-        // console.log(winH)
-        // console.log(winH / 2.5)
-        // console.log(winScr + winH)
-        // console.log(scrollPath.offset().top + scrollPath.outerHeight() / 2.5 - $('header').outerHeight())
-        // console.log(winScr)
-
-        if (scrollPath.offset().top - $('header').outerHeight() <= winScr + winH / 2.5 && scrollPath.offset().top + scrollPath.outerHeight() / 2.5 - $('header').outerHeight() > winScr) {
-          $t.closest('li').addClass('active').siblings().removeClass('active');
-        } else {
-          $t.closest('li').removeClass('active');
-        }
-      });
-    }
-  };
-
-
-  // Anchor scroll
-  $(document).on('click', 'a[href*="#"]:not([href="#"])', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-      if ($('.scroll-nav').length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - $('header').height() - $('.scroll-nav').innerHeight()
-        }, 1500);
-        return false;
-
-      } else if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - $('header').height()
-        }, 1500);
-        return false;
-      }
-    }
-  });
-
-
-  // Btn scroll up
-  function getDuration(target) {
-    var currentTop = $(window).scrollTop(),
-      rate = 0.7, // 1000px/700ms
-      distance;
-    distance = Math.abs(currentTop - target);
-    return distance * rate;
-  }
-  $(document).on('click', '.un__btn-up', function() {
-    let pageTop = $("#content-block").offset().top;
-    let duration = getDuration(pageTop);
-    $(this).addClass('anim-arrow');
-
-    $("html,body").animate({
-      scrollTop: pageTop,
-      easing: "cubic-bezier(0.61, 1, 0.88, 1)"
-    }, duration, function() {
-      $('.un__btn-up').removeClass('anim-arrow');
-    });
-  });
-
-
   /* Function on page resize */
   _functions.resizeCall = function() {
     setTimeout(function() {
       _functions.pageCalculations();
-      _functions.headerVisitWidth();
-      _functions.headerInfo()
     }, 100);
   };
 
@@ -197,99 +111,42 @@ jQuery(function($) {
   //*============
   //* 04 HEADER =
   //*============
-  // Header top info
-  _functions.headerInfo = function() {
-    let $this = $('.h-info-inner');
-    let infoH = Math.round($this.innerHeight());
-    $this.parents('body').css({
-      "--h-info-height": `${infoH}px`
-    });
-  }
-  setTimeout(function() {
-    if ($('.h-info-wrap').length > 0) {
-      _functions.headerInfo()
-      $('header').addClass('show-info');
-    }
-  }, 100);
-  $(document).on('click', '.h-info-close', function() {
-    $(this).closest('header').removeClass('show-info');
-  });
-
-
   /* Open menu */
-  $(document).on('click', '.hamburger', function() {
+  $(document).on('click', '.h-burger', function() {
     _functions.scrollWidth();
-    $(this).toggleClass('is-active');
-    $('html').toggleClass('overflow-menu');
-    $(this).parents('header').toggleClass('open-menu');
+
+    $('html').addClass('overflow-menu');
+    $(this).closest('header').addClass('open-menu');
+    // $(this).closest('header').removeClass('open-search');
+    // $(this).closest('header').find('.h-second').removeClass('active')
+  });
+
+  /* Open search */
+  $(document).on('click', '.h-search', function() {
+    _functions.scrollWidth();
+    $('html').addClass('overflow-menu');
+    $(this).closest('header').addClass('open-search');
+  });
+
+  /* Close menu & search */
+  $(document).on('click', '.h-menu-close, .h-menu-overlay, .h-search-close', function() {
+    _functions.scrollWidth();
+
+    $('html').removeClass('overflow-menu');
+    $(this).closest('header').removeClass('open-menu');
     $(this).closest('header').removeClass('open-search');
-    $(this).closest('header').find('.h-second').removeClass('active')
-    $('html').removeClass('open-second-menu');
-    _functions.headerVisitWidth();
   });
 
 
-  /* Open header link */
-  $(document).on('click', '.h-second>b', function() {
-    _functions.scrollWidth();
-    $(this).closest('.h-second').toggleClass('active').siblings().removeClass('active')
-    $('html').toggleClass('open-second-menu');
-    _functions.headerVisitWidth();
+  // Cabinet dropdown
+  $(document).on('click', '.h-cabinet', function() {
+    $(this).toggleClass('is-active');
   });
 
-  $(document).on('click', '.h-second-close', function() {
-    _functions.scrollWidth();
-    $(this).closest('.h-second').removeClass('active')
-    $('html').removeClass('open-second-menu');
-    _functions.headerVisitWidth();
-  });
-
-
-  /* Open header link on mobile */
-  $(document).on('click', '.h-dropdown-name', function() {
-    $(this).parent().addClass('active');
-  });
-
-  $(document).on('click', '.h-dropdown-back', function() {
-    $(this).closest('.h-dropdown-item').removeClass('active');
-  });
-
-
-  // Check visit width
-  _functions.headerVisitWidth = function() {
-    let $this = $('.h-inner');
-    let visitW = Math.round($this.find('.h-visit-caption').innerWidth());
-    $this.css({
-      "--h-visit-width": `${visitW}px`
-    });
-  }
-  _functions.headerVisitWidth();
-
-
-  // Header Visit dropdown
-  $(document).on('click', '.h-visit-caption', function() {
-    $(this).parent().toggleClass('active');
-  });
-
+  // Close cabinet dropdown
   $(document).on('click', function(e) {
-    if (!$(e.target).closest('.h-visit').length) {
-      $('.h-visit').removeClass('active');
-    }
-  });
-
-
-  // Header Lang 
-  $(document).on('click', '.current-lang', function() {
-    $(this).parent().toggleClass('active');
-  });
-
-  $(document).on('click', '.other-lang a', function() {
-    $(this).closest('.h-lang').removeClass('active');
-  });
-
-  $(document).on('click', function(e) {
-    if (!$(e.target).closest('.h-lang').length) {
-      $('.h-lang').removeClass('active');
+    if (!$(e.target).closest('.h-cabinet').length) {
+      $('.h-cabinet').removeClass('is-active');
     }
   });
 
@@ -301,12 +158,6 @@ jQuery(function($) {
 
   $(document).on('click', '.h-search-close', function() {
     $(this).closest('header').removeClass('open-search');
-  });
-
-  $(document).on('click', function(e) {
-    if (!$(e.target).closest('.h-visit').length) {
-      $('.h-visit').removeClass('active');;
-    }
   });
 
 
@@ -391,12 +242,6 @@ jQuery(function($) {
   //*================
   //* 06  KEY FOCUS =
   //*================
-
-
-
-
-
-
   // Detect if user is using keyboard tab-button to navigate
   // with 'keyboard-focus' class we add default css outlines
   function keyboardFocus(e) {

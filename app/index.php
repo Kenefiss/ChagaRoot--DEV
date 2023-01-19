@@ -460,9 +460,10 @@
     <?php include 'inc/_footer.php';?>
   </div>
 
-  <?php include 'inc/_cart.php';?>
-  <?php include 'inc/_popups.php';?>
+  <!-- Popups -->
+  <div class="popup-wrapper" id="popups"></div>
   <?php include 'inc/_cookies.php';?>
+  <?php include 'inc/_cart.php';?>
   <?php include 'inc/_bottom.php';?>
   <?php include 'inc/_swiper.php';?>
   <?php include 'inc/_inputs.php';?>
