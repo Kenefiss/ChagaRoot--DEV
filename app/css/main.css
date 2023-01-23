@@ -68,7 +68,6 @@ html.overflow-menu body {overflow: hidden;}
 .swiper-container.swiper-initialized {opacity: 1;}
 .popup-wrapper,
 .cookies-informer {display: none;}
-.container {width: 90%;}
 @media (min-width: 1200px) {
 .container {width: 94%;}
 }
@@ -144,6 +143,7 @@ header.scrolled .h-wrap {-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);box-
 .h-cart.h-btn {--h-btn-clr: var(--clr-black);--h-btn-svg-clr: var(--clr-white);background-color: var(--h-btn-clr);}
 .h-cart.h-btn i {background-color: rgba(255, 255, 255, 0.15);}
 .h-cart.h-btn b {background-color: var(--clr-green);}
+.h-cart.h-btn * {pointer-events: none;}
 .h-menu {position: fixed;z-index: 102;left: 0;top: 0;height: 100%;width: 456px;padding: 20px 15px;padding-left: 0;-webkit-transform: translateX(-100%);transform: translateX(-100%);background-color: var(--clr-white);-webkit-transition: var(--transition-1);transition: var(--transition-1);}
 .h-menu-overlay {position: fixed;z-index: 101;inset: 0;opacity: 0;visibility: hidden;background-color: rgba(19, 30, 41, 0.8);-webkit-transition: var(--transition-1);transition: var(--transition-1);}
 .open-menu .h-menu {-webkit-transform: translateX(0%);transform: translateX(0%);}
@@ -208,6 +208,9 @@ header.scrolled .h-wrap {-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);box-
 @media (max-width: 575px) {
 .h-menu {width: 80%;}
 }
+@media (max-width: 374px) {
+:root {--h-logo-width: 84px;}
+}
 /*--------------------*/
 /* - BANNER           */
 /*--------------------*/
@@ -228,6 +231,7 @@ header.scrolled .h-wrap {-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);box-
 .btn-secondary i svg *[stroke] {stroke: var(--clr-black);}
 .btn-secondary i svg *[fill] {fill: var(--clr-black);}
 .btn-block {width: 100%;}
+.btn.disabled {pointer-events: none;background-color: var(--clr-grey);}
 .btn-close {display: inline-block;position: relative;cursor: pointer;width: 28px;height: 28px;color: var(--clr-text);border-radius: 100%;background-color: rgba(19, 30, 41, 0.05);-webkit-transition: color var(--transition-1);transition: color var(--transition-1);}
 .btn-close::before,
 .btn-close::after {content: "";position: absolute;top: 50%;left: 50%;width: 50%;height: 1px;-webkit-transform: translate(-50%, -50%) rotate(45deg);transform: translate(-50%, -50%) rotate(45deg);background-color: currentColor;}

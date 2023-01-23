@@ -293,8 +293,8 @@
 
   <!-- Popups -->
   <div class="popup-wrapper" id="popups"></div>
-  <?php include 'inc/_cart.php';?>
   <?php include 'inc/_bottom.php';?>
+  <?php include 'inc/_cart.php';?>
   <?php include 'inc/_swiper.php';?>
   <?php include 'inc/_inputs.php';?>
 </body>

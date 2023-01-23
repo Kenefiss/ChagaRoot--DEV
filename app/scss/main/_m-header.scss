@@ -346,6 +346,10 @@ header.scrolled .h-wrap {
     b {
       background-color: var(--clr-green);
     }
+
+    * {
+      pointer-events: none;
+    }
   }
 }
 
@@ -642,5 +646,11 @@ header.scrolled .h-wrap {
 @media (max-width: 575px) {
   .h-menu {
     width: 80%;
+  }
+}
+
+@media (max-width: 374px) {
+  :root {
+    --h-logo-width: 84px;
   }
 }

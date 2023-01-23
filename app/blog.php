@@ -16,6 +16,7 @@
     <main>
       <!-- Blog -->
       <div class="section">
+        <div class="spacer-sm"></div>
         <div class="container">
           <!-- title -->
           <h1 class="h2 title title-page">
@@ -310,8 +311,8 @@
 
   <!-- Popups -->
   <div class="popup-wrapper" id="popups"></div>
-  <?php include 'inc/_cart.php';?>
   <?php include 'inc/_bottom.php';?>
+  <?php include 'inc/_cart.php';?>
   <?php include 'inc/_inputs.php';?>
 </body>
 

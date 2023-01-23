@@ -283,6 +283,14 @@
                 </i>
                 <b>button primary</b>
               </div>
+              <div class="btn btn-primary disabled">
+                <i>
+                  <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.1665 5.53325L13.7665 5.53325M13.7665 5.53325L9.2665 1.33325M13.7665 5.53325L9.26651 9.73325" stroke='white' stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </i>
+                <b>button primary</b>
+              </div>
               <div class="btn-close"></div>
             </div>
             <div class="spacer-xs"></div>
@@ -352,9 +360,9 @@
 
   <!-- Popups -->
   <div class="popup-wrapper" id="popups"></div>
+  <?php include 'inc/_bottom.php';?>
   <?php include 'inc/_cookies.php';?>
   <?php include 'inc/_cart.php';?>
-  <?php include 'inc/_bottom.php';?>
   <?php include 'inc/_swiper.php';?>
   <?php include 'inc/_inputs.php';?>
 </body>

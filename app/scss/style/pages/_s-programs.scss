@@ -1,0 +1,154 @@
+/*--------------------*/
+/* - Programs         */
+/*--------------------*/
+.program-row {
+  --bs-gutter-x: 10px;
+  --bs-gutter-y: 30px;
+}
+
+.program-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 20px;
+  background: var(--bg-1);
+  border-radius: var(--rd-1);
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  >*:last-child:is(.btn) {
+    margin-top: auto;
+  }
+}
+
+.program-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 48%;
+  background: var(--clr-white);
+  border-radius: var(--rd-1);
+  margin-bottom: 15px;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 98%;
+    max-height: 98%;
+  }
+}
+
+.phase-wrap {
+  width: 100%;
+}
+
+.phase-item {
+  margin-bottom: 15px;
+
+  &:nth-child(3n+1) {
+    .phase-title b {
+      color: var(--clr-org);
+    }
+  }
+
+  &:nth-child(3n+2) {
+    .phase-title b {
+      color: var(--clr-green);
+    }
+  }
+
+  &:nth-child(3n+3) {
+    .phase-title b {
+      color: var(--clr-prl);
+    }
+  }
+}
+
+.phase-title {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: var(--clr-black);
+  padding-right: 20px;
+
+  b {
+    margin-left: 5px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: 2px;
+      width: 10px;
+      height: 10px;
+      color: inherit;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      transition: var(--transition-1);
+    }
+  }
+
+  &.is-active {
+    b:before {
+      top: 12px;
+      transform: rotate(225deg);
+    }
+  }
+}
+
+.phase-content {
+  display: none;
+  padding-top: 15px;
+}
+
+@media (max-width: 1640px) {
+  .program-row {
+    --bs-gutter-y: 20px;
+  }
+
+  .program-item {
+    padding: 15px;
+
+    .title {
+      margin-bottom: 12px;
+    }
+  }
+
+  .program-img {
+    margin-bottom: 12px;
+  }
+
+  .phase-item {
+    margin-bottom: 12px;
+  }
+
+  .phase-title {
+    font-size: 18px;
+
+    b {
+      &:before {
+        top: 6px;
+        width: 9px;
+        height: 9px;
+      }
+    }
+
+    &.is-active {
+      b:before {
+        top: 10px;
+      }
+    }
+  }
+
+  .phase-content {
+    padding-top: 12px;
+  }
+}

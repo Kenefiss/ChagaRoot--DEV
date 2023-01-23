@@ -88,6 +88,9 @@
     }
   }
 
+  .input:focus+.input-placeholder {
+    opacity: 0;
+  }
 }
 
 .footer-bottom {

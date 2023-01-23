@@ -208,6 +208,14 @@ textarea.input {
 .ch-box-wrap {
   display: block;
   text-align: left;
+
+  .ch-box-entry {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .ch-box-entry {

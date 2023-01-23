@@ -277,6 +277,31 @@ jQuery(function($) {
   //*==============
   //* 11 OTHER JS =
   //*==============
+  $(document).on('click', '.phase-title', function() {
+    $(this).toggleClass('is-active').siblings('.phase-content').slideToggle();
+  })
+
+
+  $(document).on('click', '.cs-list-img', function() {
+    var tab = $('.cs-info-list').find('.text');
+    var i = $(this).closest('.cs-list-item').index();
+
+    $(this).closest('.cs-list-item').addClass('active').siblings().removeClass('active')
+
+    tab.eq(i).siblings('.text:visible').stop().finish().fadeOut(function() {
+      tab.eq(i).fadeIn();
+    });
+
+    changeImageQuote()
+  })
+
+  function changeImageQuote() {
+    let imgUrl = $('.cs-list-item.active').attr('data-img-quote');
+    $('.cs-inner-img img').attr('src', imgUrl)
+  }
+
+  changeImageQuote()
+
 
 
 
