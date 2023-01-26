@@ -58,6 +58,7 @@ html.overflow-hidden body {overflow: hidden;}
 html.overflow-menu,
 html.overflow-menu body {overflow: hidden;}
 .section {position: relative;}
+.sec-decor {position: absolute;z-index: -1;pointer-events: none;}
 [class*=spacer] {clear: both;width: 100% !important;}
 .spacer-lg {height: 160px;}
 .spacer-md {height: 120px;}

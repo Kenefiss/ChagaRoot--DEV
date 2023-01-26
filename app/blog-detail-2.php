@@ -89,6 +89,42 @@
                           </picture>
                         </div>
                       </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <picture>
+                            <source srcset="img/blog-sm-img-1.webp" type="image/webp">
+                            <source srcset="img/blog-sm-img-1.jpg" type="image/jpg">
+                            <img src="img/blog-sm-img-1.jpg" alt="" loading="lazy">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <picture>
+                            <source srcset="img/blog-sm-img-2.webp" type="image/webp">
+                            <source srcset="img/blog-sm-img-2.jpg" type="image/jpg">
+                            <img src="img/blog-sm-img-2.jpg" alt="" loading="lazy">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <picture>
+                            <source srcset="img/blog-sm-img-1.webp" type="image/webp">
+                            <source srcset="img/blog-sm-img-1.jpg" type="image/jpg">
+                            <img src="img/blog-sm-img-1.jpg" alt="" loading="lazy">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <picture>
+                            <source srcset="img/blog-sm-img-2.webp" type="image/webp">
+                            <source srcset="img/blog-sm-img-2.jpg" type="image/jpg">
+                            <img src="img/blog-sm-img-2.jpg" alt="" loading="lazy">
+                          </picture>
+                        </div>
+                      </div>
                     </div>
                     <div class="swiper-pagination swiper-pagination-relative"></div>
                   </div>

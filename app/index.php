@@ -14,8 +14,7 @@
     <?php include 'inc/_header.php';?>
 
     <main>
-
-      <!-- Hero section -->
+      <!-- Hero section  * -->
       <div class="section">
         <div class="spacer-sm"></div>
         <div class="container">
@@ -44,7 +43,7 @@
                       <b>Cleanse.</b>
                     </a>
                   </div>
-                  <div class="point green-clr" style="top: 44%; left: 68%">
+                  <div class="point green-clr" style="top: 44%; left: 66%">
                     <a class="btn" href="programs.php">
                       <b>Nourish.</b>
                     </a>
@@ -71,6 +70,15 @@
       <div class="section">
         <div class="container">
           <div class="pr-section">
+
+            <!-- decor -->
+            <div class="sec-decor d-none d-xl-block" style="right: -30px; top: -10px; z-index: 0;">
+              <picture>
+                <source type="image/svg+xml" media="(min-width:1200px)" srcset="img/decor-1.svg">
+                <img src="" alt="" loading="lazy">
+              </picture>
+            </div>
+
             <div class="row justify-content-center">
               <div class="col-xl-11 col-md-10 col-11">
                 <div class="row justify-content-xl-between justify-content-lg-center">
@@ -79,7 +87,7 @@
                       <img src="img/pr-img.svg" alt="" loading="lazy">
                     </div>
                   </div>
-                  <div class="col-lg-10 col-xxl-5">
+                  <div class="col-lg-10 col-xl-5">
                     <form class="pr-form">
                       <div class="title h3">
                         Create Your Meal Program
@@ -185,6 +193,14 @@
 
           <!-- Products slider -->
           <div class="swiper-entry products_swiper" itemscope="" itemtype="http://schema.org/Product">
+            <!-- decor -->
+            <div class="sec-decor d-none d-xl-block" style="right: -100px; top: -150px; z-index: 0;">
+              <picture>
+                <source type="image/svg+xml" media="(min-width:1200px)" srcset="img/decor-2.svg">
+                <img src="" alt="" loading="lazy">
+              </picture>
+            </div>
+
             <div class="swiper-container" data-options='{"arrowsOut": true, "lazy": true, "slidesPerView": "auto", "spaceBetween":15, "breakpoints":{"575":{"spaceBetween": 10,"slidesPerView": 2}, "992":{"spaceBetween": 10,"slidesPerView": 3}, "1200":{"spaceBetween": 10, "slidesPerView": 4}, "1641":{"spaceBetween": 10, "slidesPerView": 5}, "2000":{"spaceBetween": 10, "slidesPerView": 6}}}'>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -421,6 +437,15 @@
 
       <!-- Program section  * -->
       <div class="section">
+
+        <!-- decor -->
+        <div class="sec-decor d-none d-xl-block" style="left: 35px; top: -80px;">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1200px)" srcset="img/decor-3.svg">
+            <img src="" alt="" loading="lazy">
+          </picture>
+        </div>
+
         <div class="container">
           <!-- title -->
           <div class="h2 title title-margin">
@@ -713,6 +738,15 @@
 
       <!-- Customer section  * -->
       <div class="section">
+
+        <!-- decor -->
+        <div class="sec-decor d-none d-xl-block" style="left: 35px; top: -140px;">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1200px)" srcset="img/decor-4.svg">
+            <img src="" alt="" loading="lazy">
+          </picture>
+        </div>
+
         <div class="container">
           <div class="cs-inner">
             <div class="cs-inner-info">
@@ -921,6 +955,15 @@
 
       <!-- Questions section  * -->
       <div class="section">
+
+        <!-- decor -->
+        <div class="sec-decor d-none d-xl-block" style="right: 80px; bottom: 10px;">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1200px)" srcset="img/decor-5.svg">
+            <img src="" alt="" loading="lazy">
+          </picture>
+        </div>
+
         <div class="container">
           <div class="qst-section">
             <div class="row justify-content-between">

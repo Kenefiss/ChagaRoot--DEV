@@ -78,6 +78,11 @@ html.overflow-menu body {
   position: relative;
 }
 
+.sec-decor {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
 
 [class*='spacer'] {
   clear: both;

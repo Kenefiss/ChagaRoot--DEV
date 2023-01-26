@@ -15,16 +15,24 @@
 
     <main>
 
-      <!-- Articles detail section -->
+      <!-- Privacy policy -->
       <div class="section">
         <div class="spacer-xs"></div>
+        <!-- decor -->
+        <div class="sec-decor d-none d-xl-block" style="right: 15px; top: 50px">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1200px)" srcset="img/decor-4.svg">
+            <img src="" alt="" loading="lazy">
+          </picture>
+        </div>
+
         <div class="container">
           <div class="row justify-content-center">
             <!-- page title -->
             <div class="col-xxl-8 col-xl-10">
-              <div class="title h3">
+              <h1 class="title h2">
                 Privacy policy
-              </div>
+              </h1>
               <div class="page-line size-2"></div>
             </div>
 

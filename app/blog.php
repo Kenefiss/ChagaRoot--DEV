@@ -17,6 +17,14 @@
       <!-- Blog -->
       <div class="section">
         <div class="spacer-sm"></div>
+        <!-- decor -->
+        <div class="sec-decor d-none d-xl-block" style="right: 15px; top: 50px">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1200px)" srcset="img/decor-3.svg">
+            <img src="" alt="" loading="lazy">
+          </picture>
+        </div>
+
         <div class="container">
           <!-- title -->
           <h1 class="h2 title title-page">

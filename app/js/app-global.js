@@ -267,9 +267,32 @@ jQuery(function($) {
   //*=====================
   //* 07 TABS, ACCORDION =
   //*=====================
+  // tabs
+  $(document).on('click', '.tab-title', function() {
+    $(this).closest('.tab-nav').toggleClass('active');
+  });
+  $(document).on('click', '.tab-toggle>div', function(e) {
+    let tab = $(this).closest('.tabs').find('.tab');
+    let i = $(this).index();
+
+    $(this).addClass('active').siblings().removeClass('active');
+    tab.eq(i).siblings('.tab:visible').stop().finish().fadeOut(function() {
+      tab.eq(i).fadeIn(200);
+    });
+    $(this).closest('.tab-nav').removeClass('active').find('.tab-title b').text($(this).text());
+    e.preventDefault();
+  });
 
 
-
+  // accordion
+  $(document).on('click', '.accordion .accordion-item .accordion-title', function() {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active').next().slideUp();
+    } else {
+      $(this).closest('.accordion').find('.accordion-title').not(this).removeClass('active').next().slideUp();
+      $(this).addClass('active').next().slideDown();
+    }
+  });
 
 
 
@@ -279,6 +302,7 @@ jQuery(function($) {
   //*==============
   $(document).on('click', '.phase-title', function() {
     $(this).toggleClass('is-active').siblings('.phase-content').slideToggle();
+    $(this).closest('.phase-item').siblings().find('.phase-title').removeClass('is-active').siblings('.phase-content').slideUp();
   })
 
 
