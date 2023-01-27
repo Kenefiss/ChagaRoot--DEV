@@ -1,0 +1,109 @@
+/*--------------------*/
+/* - CONTACTS         */
+/*--------------------*/
+.ct-items-row {
+  --bs-gutter-y: 30px;
+}
+
+.contact-item-title {
+  font-size: var(--h-4);
+  line-height: 1.36em;
+  font-weight: 500;
+  color: var(--clr-title);
+  vertical-align: top;
+  margin-bottom: 15px;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 4px;
+  }
+}
+
+.contact-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: var(--h-5);
+  line-height: 1.3em;
+  color: var(--clr-text);
+
+  >*+* {
+    margin-top: 5px;
+  }
+}
+
+.contact-block {
+  position: relative;
+  padding: 140px;
+  background: var(--bg-1);
+  border-radius: var(--rd-1);
+  margin-top: 50px;
+}
+
+.ct-block {
+
+  .text {
+    margin-top: 5px;
+  }
+}
+
+.ct-block-form {
+  margin-top: 30px;
+
+  .input-placeholder,
+  .SumoSelect>.optWrapper {
+    background-color: var(--bg-1);
+  }
+
+  .ch-box-wrap .title {
+    margin-bottom: 5px;
+  }
+}
+
+.ct-map {
+  position: relative;
+  padding-top: 136%;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--rd-1);
+}
+
+.map {
+  position: absolute;
+  inset: 0;
+  background-color: darkkhaki;
+}
+
+@media (min-width: 1200px) {
+  .contact-item-info {
+    a:hover {
+      color: var(--clr-green);
+    }
+  }
+}
+
+@media (max-width: 1640px) {
+  .contact-block {
+    padding: 70px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .ct-map {
+    padding-top: 70%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-block {
+    padding: 35px 15px;
+  }
+
+  .ct-map {
+    margin-bottom: 35px;
+  }
+}

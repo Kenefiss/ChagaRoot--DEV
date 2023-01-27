@@ -5,13 +5,13 @@
 //*========================================
 //* 03 HEADER                             =
 //*========================================
-//* 05 POPUPS                             =
+//* 04 POPUPS                             =
 //*========================================
-//* 06 KEY FOCUS                          =
+//* 05 KEY FOCUS                          =
 //*========================================
-//* 07 TABS, ACCORDION, MORE-TEXT, TABLE  =
+//* 06 TABS, ACCORDION, MORE-TEXT, TABLE  =
 //*========================================
-//* 11 OTHER JS                           =
+//* OTHER JS                           =
 //*========================================
 
 
@@ -109,7 +109,7 @@ jQuery(function($) {
 
 
   //*============
-  //* 04 HEADER =
+  //* 03 HEADER =
   //*============
   /* Open menu */
   $(document).on('click', '.h-burger', function() {
@@ -117,8 +117,6 @@ jQuery(function($) {
 
     $('html').addClass('overflow-menu');
     $(this).closest('header').addClass('open-menu');
-    // $(this).closest('header').removeClass('open-search');
-    // $(this).closest('header').find('.h-second').removeClass('active')
   });
 
   /* Open search */
@@ -164,7 +162,7 @@ jQuery(function($) {
 
 
   //*============
-  //* 05 POPUPS =
+  //* 04 POPUPS =
   //*============
   // Function check scroll width
   _functions.scrollWidth = function() {
@@ -240,7 +238,7 @@ jQuery(function($) {
 
 
   //*================
-  //* 06  KEY FOCUS =
+  //* 05  KEY FOCUS =
   //*================
   // Detect if user is using keyboard tab-button to navigate
   // with 'keyboard-focus' class we add default css outlines
@@ -265,7 +263,7 @@ jQuery(function($) {
 
 
   //*=====================
-  //* 07 TABS, ACCORDION =
+  //* 06 TABS, ACCORDION =
   //*=====================
   // tabs
   $(document).on('click', '.tab-title', function() {
@@ -279,7 +277,7 @@ jQuery(function($) {
     tab.eq(i).siblings('.tab:visible').stop().finish().fadeOut(function() {
       tab.eq(i).fadeIn(200);
     });
-    $(this).closest('.tab-nav').removeClass('active').find('.tab-title b').text($(this).text());
+    $(this).closest('.tab-nav').removeClass('active').find('.tab-title').text($(this).text());
     e.preventDefault();
   });
 
@@ -298,7 +296,7 @@ jQuery(function($) {
 
 
   //*==============
-  //* 11 OTHER JS =
+  //* OTHER JS    =
   //*==============
   $(document).on('click', '.phase-title', function() {
     $(this).toggleClass('is-active').siblings('.phase-content').slideToggle();
@@ -323,7 +321,6 @@ jQuery(function($) {
     let imgUrl = $('.cs-list-item.active').attr('data-img-quote');
     $('.cs-inner-img img').attr('src', imgUrl)
   }
-
   changeImageQuote()
 
 

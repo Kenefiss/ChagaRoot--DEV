@@ -211,13 +211,14 @@ header.scrolled .h-wrap {
     &:before {
       content: '';
       position: absolute;
-      top: 3px;
+      top: 2px;
       right: 2px;
       width: 8px;
       height: 8px;
       border-right: 1px solid currentColor;
       border-bottom: 1px solid currentColor;
       transform: rotate(45deg);
+      transition: var(--transition-1);
     }
   }
 
@@ -225,6 +226,11 @@ header.scrolled .h-wrap {
     .h-cabinet-dropdown {
       opacity: 1;
       visibility: visible;
+    }
+
+    .h-btn div:before {
+      top: 6px;
+      transform: rotate(225deg);
     }
   }
 }

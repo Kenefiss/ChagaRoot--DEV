@@ -32,21 +32,21 @@
           </h1>
 
           <div class="row justify-content-center">
-            <div class="col-lg-10 col-xl-9 col-xxl-8">
+            <div class="col-xl-10 col-xxl-8">
               <div class="tabs">
                 <div class="row">
                   <div class="col-12 col-lg-4">
                     <div class="tab-nav">
-                      <div class="tab-title">про компанію</div>
+                      <div class="tab-title">How can I place an order?</div>
                       <div class="tab-toggle">
-                        <div class="active"><span class="tab-caption">про компанію</span></div>
-                        <div><span class="tab-caption">деталі процесу роботи</span></div>
-                        <div><span class="tab-caption">як купити</span></div>
-                        <div><span class="tab-caption">ціни</span></div>
+                        <div class="active">How can I place an order?</div>
+                        <div>Can I place an order over the phone?</div>
+                        <div>What is your minimum order?</div>
+                        <div>How to pay?</div>
+                        <div>How can I place an order?</div>
                       </div>
                     </div>
                   </div>
-
                   <div class="col-12 col-lg-8">
                     <div class="tab active">
                       <div class="accordion">

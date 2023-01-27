@@ -44,6 +44,26 @@ ul,
 ol {list-style: none;}
 picture {font-size: 0;}
 img {max-width: 100%;height: auto;}
+input {-webkit-appearance: none;-moz-appearance: none;font-size: 16px;font-weight: 400;color: var(--clr-black);}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {display: none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+input[type=number] {-moz-appearance: textfield;}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {-webkit-appearance: none;height: 0.7em;width: 0.7em;background-size: contain;cursor: pointer;}
+input,
+textarea,
+select {border-radius: 0;background: none;border: none;margin: 0;width: 100%;padding: 0;}
+textarea {display: block;resize: none;overflow: auto;}
+select::-ms-expand {display: none;}
 /*--------------------*/
 /* - GLOBAL SETTINGS  */
 /*--------------------*/
@@ -127,8 +147,9 @@ header.scrolled .h-wrap {-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);box-
 .h-search-inner input {width: 100%;}
 .h-cabinet {position: relative;}
 .h-cabinet .h-btn div {position: relative;margin-left: 10px;padding-right: 25px;font-weight: 400;font-size: 16px;line-height: 1em;color: var(--clr-black);}
-.h-cabinet .h-btn div:before {content: "";position: absolute;top: 3px;right: 2px;width: 8px;height: 8px;border-right: 1px solid currentColor;border-bottom: 1px solid currentColor;-webkit-transform: rotate(45deg);transform: rotate(45deg);}
+.h-cabinet .h-btn div:before {content: "";position: absolute;top: 2px;right: 2px;width: 8px;height: 8px;border-right: 1px solid currentColor;border-bottom: 1px solid currentColor;-webkit-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: var(--transition-1);transition: var(--transition-1);}
 .h-cabinet.is-active .h-cabinet-dropdown {opacity: 1;visibility: visible;}
+.h-cabinet.is-active .h-btn div:before {top: 6px;-webkit-transform: rotate(225deg);transform: rotate(225deg);}
 .h-cabinet-dropdown {position: absolute;bottom: -20px;right: 0;width: 250px;opacity: 0;visibility: hidden;-webkit-backface-visibility: hidden;backface-visibility: hidden;-webkit-transform: translateY(100%);transform: translateY(100%);-webkit-transition: var(--transition-1);transition: var(--transition-1);}
 .h-cabinet-dropdown ul {line-height: 0;border: 1px solid var(--clr-grey-2);border-radius: var(--rd-1);background-color: var(--clr-white);}
 .h-cabinet-dropdown li {padding: 12px 15px;line-height: 0;}

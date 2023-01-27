@@ -1,0 +1,21 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "dataRel": "map",
+      "dataCity": 1,
+      "dataLat": 49.82418285,
+      "dataLng": 23.92810464,
+      "dataImg": "img/marker.png",
+      "dataImgMobile": "img/marker-mobile.png",
+      "town": "Львів",
+      "street": "вулиця Тершаковців, 2А",
+      "phone": "+38 (098) 809 80 80",
+      "phoneLink": "+380988098080",
+      "email": "AdvokatMarket@gmail.com",
+      "workDays_1": "Пн.-Пт. з 10:00 до 20:00",
+      "workDays_2": "Сб.-Нд. з 10:00 до 16:00",
+      "googleLink": "https://goo.gl/maps/pgQYnD454KzJKZmn7"
+    }
+  ]
+}
