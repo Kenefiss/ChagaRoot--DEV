@@ -164,7 +164,7 @@ h6,
     margin-top: calc(var(--text-space) * 3);
   }
 
-  *+:is(p, ul, ol, li) {
+  *+:is(p, ul, ol, li, h1, h2, h3, h4, h5, h6) {
     margin-top: var(--text-space);
   }
 
@@ -172,7 +172,7 @@ h6,
     margin-top: calc(var(--text-space) * 3);
   }
 
-  *+:is(.swiper-entry *) {
+  .swiper-entry>* * {
     margin-top: 0;
   }
 }

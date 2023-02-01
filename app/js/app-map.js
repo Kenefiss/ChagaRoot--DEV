@@ -342,9 +342,7 @@ jQuery(function($) {
       ib.setPosition(location);
       ib.open(maps[mapId].map);
 
-
       maps[mapId].map.setCenter(location);
-
 
       if ($('.map').length) {
         if (winW < 768) {
@@ -404,20 +402,6 @@ jQuery(function($) {
     };
 
 
-    // option Custer marker
-    var clusterOptions = {
-      gridSize: 64,
-      ignoreHiddenMarkers: true,
-      styles: [{
-        url: clusterImg,
-        height: 63,
-        width: 62,
-        textSize: 18,
-        textColor: '#ffffff',
-      }]
-    };
-
-
     if ($('.contact-block').length) {
       let mapDataLink = $('.contact-block').attr('data-map-json');
 
@@ -433,18 +417,13 @@ jQuery(function($) {
           console.log(data)
 
 
-
-
           for (let locations in data) {
             for (let i = 0; i < data[locations].length; i++) {
-              let town = data[locations][i].town,
-                street = data[locations][i].street,
+              let address = data[locations][i].town,
+
                 phone = data[locations][i].phone,
                 phoneLink = data[locations][i].phoneLink,
                 email = data[locations][i].email,
-                workDays_1 = data[locations][i].workDays_1,
-                workDays_2 = data[locations][i].workDays_2,
-                googleLink = data[locations][i].googleLink,
                 imgMarker = winW < 768 ? data[locations][i].dataImgMobile : data[locations][i].dataImg;
 
               let markerInst;
@@ -453,8 +432,8 @@ jQuery(function($) {
                 '             <div class="btn-close"></div>' +
                 '             <div class="info-box-inner">' +
                 '               <div class="contact-item">' +
-                '                 <div class="contact-img"><img src="img/icons/i-contact-1.svg" alt="" loading="lazy"></div>' +
-                '                 <div class="contact-info"><div>' + town + ', ' + street + '</div></div>' +
+                '                 <div class="contact-img"><img src="img/icons/icon-pin.svg" alt="" loading="lazy"></div>' +
+                '                 <div class="contact-info"><div>' + address + '</div></div>' +
                 '               </div>' +
                 '               <div class="contact-item">' +
                 '                 <div class="contact-img"><img src="img/icons/i-contact-2.svg" alt="" loading="lazy"></div>' +
@@ -469,7 +448,7 @@ jQuery(function($) {
                 '                 <div class="contact-info"><div>' + workDays_1 + '</div><div>' + workDays_2 + '</div></div>' +
                 '               </div>' +
                 '             </div>' +
-                '             <a class="btn btn-link-2" href="' + googleLink + '" target="_blank"><b>Прокласти маршрут</b></a>' +
+
                 '           </div>'
 
 

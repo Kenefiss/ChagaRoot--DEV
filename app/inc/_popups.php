@@ -242,13 +242,13 @@
             <label class="ch-box-entry">
               <input type="checkbox">
               <span>
-                I have read and agree to <a href="#">Privacy Policy</a>
+                I have read and agree to <a href="privacy.php">Privacy Policy</a>
               </span>
             </label>
           </div>
 
           <div class="popup-form-bottom">
-            <div class="btn btn-primary">
+            <div class="btn btn-primary btn-block">
               <i>
                 <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.1665 5.53325L13.7665 5.53325M13.7665 5.53325L9.2665 1.33325M13.7665 5.53325L9.26651 9.73325" stroke='white' stroke-linecap="round" stroke-linejoin="round" />

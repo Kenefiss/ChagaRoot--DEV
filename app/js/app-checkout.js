@@ -136,65 +136,58 @@ jQuery(function($) {
   });
 
 
-
-  // // checkout calculate
-  // _functions.calculateTotalCheckoutPrice = function() {
-  //   let allSummProduct = 0;
-  //   $('.checkout-products .js-checkout-product').each(function() {
-  //     allSummProduct += +$(this).data('price') * +$(this).find('.thumb-input-number input').val();
-  //   });
-  //   $('.all-product-price-el').text(allSummProduct);
-
-  //   //show empty cart message
-  //   if (allSummProduct === 0) {
-  //     $('.cart-empty-section').show();
-  //     $('.checkout-section').hide();
-  //   }
-
-  // }
-  // _functions.calculateTotalCheckoutPrice();
-
-
-
-  // $(document).on('click', '.js-checkout-product .thumb-input-number button', function() {
-  //   _functions.calculateTotalCheckoutPrice();
-
-  //   let prod = $(this).closest('.js-checkout-product'),
-  //     productSum = +prod.data('price') * +prod.find('input').val();
-  //   prod.find('.price').text(productSum);
-  // });
-
-  // //remove product from card
-  // $(document).on('click', '.js-checkout-product .btn-close', function() {
-  //   $(this).closest('.js-checkout-product').slideUp(0, function() {
-  //     $(this).remove();
-  //     _functions.calculateTotalCheckoutPrice();
-  //   });
-  // });
-
-
-
-
-  //single product price
-  _functions.calculateSinglePrice = function($parentEl) {
-    let prod = $parentEl,
-      productSum = +prod.attr('data-price') * +prod.find('input').val(),
-      checkedModify = $('.js-product .modify-product input'),
-      modifySum = +prod.find('.modify-product .checkbox-entry').attr('data-price') * +prod.find('input').val();
-    prod.find('.price').text(productSum);
-
-    if (checkedModify.is(":checked")) {
-      checkedModify.prop("checked", true);
-      prod.find('.price').text(productSum + modifySum);
-    } else {
-      checkedModify.prop("checked", false);
-      prod.find('.price').text(productSum);
-    }
-  }
-
-  $(document).on('click', '.js-product .thumb-input-number button', function() {
-    _functions.calculateSinglePrice($(this).closest('.js-product'));
+  //*===========
+  //* Checkout =
+  //*===========
+  $(document).on('click', '.toggle-btn', function() {
+    $(this).toggleClass('is-active');
+    $(this).closest('.toggle-block').find('.toggle-inner').slideToggle();
   });
+
+
+
+  $(document).on('click', '.checkout-wrap .js-checkout-product .thumb-input-number button', function() {
+    let qv = $(this).siblings('input').val();
+    $(this).closest('.js-checkout-product').find('.cart_prd-q').html(qv);
+
+    _functions.calcTotalCheckoutPrice();
+  });
+
+  //remove product from checkout
+  $(document).on('click', '.checkout-wrap  .js-checkout-product .btn-delete', function() {
+    $(this).closest('.js-checkout-product').slideUp(0, function() {
+      $(this).remove();
+      _functions.calcTotalCheckoutPrice();
+    })
+  });
+
+
+  // checkout calculate
+  _functions.calcTotalCheckoutPrice = function() {
+    let allSummProduct = 0;
+    let discountProduct = !$('.order-discount').hasClass('d-none') ? +$('#discount-price').text() : 0;
+
+
+    $('.checkout_items .js-checkout-product').each(function() {
+      allSummProduct += +$(this).data('price') * +$(this).find('.thumb-input-number input').val();
+    });
+
+    // Subtotal
+    $('#all-product-price').text(allSummProduct.toFixed(2));
+
+
+    let totalPrice = allSummProduct - discountProduct;
+
+    $('#total-price').text(totalPrice.toFixed(2));
+
+
+    //show empty cart message
+    if (allSummProduct === 0) {
+      // do something
+    }
+
+  }
+  _functions.calcTotalCheckoutPrice();
 
 
 

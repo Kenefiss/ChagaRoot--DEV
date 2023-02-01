@@ -115,7 +115,7 @@
                       </div>
 
                       <div class="input-field-wrapper">
-                        <select class="SelectBox" name="question" placeholder="fff">
+                        <select class="SelectBox" name="question" placeholder="*">
                           <option value="1">Question 1</option>
                           <option value="2">Question 2</option>
                           <option value="3">Question 3</option>

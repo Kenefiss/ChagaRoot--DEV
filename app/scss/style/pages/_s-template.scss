@@ -1,0 +1,405 @@
+/*--------------------*/
+/* - Banner           */
+/*--------------------*/
+.banner {
+  position: relative;
+
+  .sec-decor {
+    right: -80px;
+    top: -140px;
+  }
+}
+
+.banner-inner {
+  position: relative;
+  padding-top: 39.635%;
+  overflow: hidden;
+  border-radius: var(--rd-1);
+
+  img {
+    @include objectFit;
+  }
+}
+
+@media (max-width: 1640px) {
+  .banner {
+    .sec-decor {
+      right: -80px;
+      top: -80px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-inner {
+    padding-top: 50%;
+  }
+}
+
+/*--------------------*/
+/* - Left & Right     */
+/*--------------------*/
+.lr-img {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+  border-radius: var(--rd-1);
+  background-color: var(--bg-1);
+
+  &:not(.full-img) img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%
+  }
+
+  &.full-img {
+    img {
+      @include objectFit;
+    }
+  }
+}
+
+.lr-content .phase-title {
+  >* {
+    display: block;
+  }
+
+  b {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.lr-content .phase-wrap {
+  >*:first-child .phase-content {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lr-content .text {
+    --text-space: 20px;
+
+    *+:is(li) {
+      margin-top: calc(var(--text-space) / 2);
+    }
+  }
+}
+
+@media (min-width: 1641px) {
+  .lr-content .text {
+    --text-space: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lr-img {
+    margin-bottom: 15px;
+  }
+}
+
+/*--------------------*/
+/* - Benefits         */
+/*--------------------*/
+.benefits-row {
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 30px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+}
+
+.benefit-num {
+  flex-shrink: 0;
+  font-size: var(--h-2);
+  line-height: 1em;
+  font-weight: bold;
+  color: var(--clr-black);
+  margin-right: 30px;
+}
+
+@media (max-width: 1640px) {
+  .benefit-num {
+    font-size: calc(var(--h-2) * 1.5);
+  }
+}
+
+@media (max-width: 1199px) {
+  .benefit-item {
+    display: block;
+  }
+}
+
+@media (max-width: 1199px) {
+  .benefit-item {
+    display: block;
+  }
+}
+
+/*--------------------*/
+/* - Benefits Card    */
+/*--------------------*/
+.bf-card {
+  padding: 20px;
+  height: 100%;
+  border-radius: var(--rd-1);
+  background-color: var(--bg-1);
+
+  .title {
+    margin-bottom: 10px;
+  }
+}
+
+.bf-card-img {
+  display: block;
+  position: relative;
+  padding-top: 49%;
+  overflow: hidden;
+  border-radius: var(--rd-1);
+  margin-bottom: 20px;
+
+  img {
+    @include objectFit;
+  }
+}
+
+@media (min-width: 768px) {
+  .benefits-slider .swiper-slide {
+    height: auto;
+  }
+}
+
+@media (max-width: 1640px) {
+  .bf-card {
+    padding: 15px;
+
+    .title {
+      margin-bottom: 10px;
+    }
+  }
+
+  .bf-card-img {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .benefits-slider .swiper-slide {
+    height: auto;
+  }
+}
+
+/*--------------------*/
+/* - Gallery          */
+/*--------------------*/
+.gallery-img {
+  display: block;
+  position: relative;
+  padding-top: 63%;
+  overflow: hidden;
+  border-radius: var(--rd-1);
+
+  img {
+    @include objectFit;
+  }
+}
+
+/*--------------------*/
+/* - Ambassador form  */
+/*--------------------*/
+.ambassador-form {
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .form-block {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1640px) {
+  .ambassador-form {
+    .form-block {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+/*--------------------*/
+/* - Journey section  */
+/*--------------------*/
+.jr-row {
+  --bs-gutter-y: 45px;
+}
+
+.jr-img {
+  text-align: center;
+
+  Img {
+    line-height: 0;
+  }
+}
+
+@media (max-width: 1640px) {
+  .jr-row {
+    --bs-gutter-y: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .jr-row {
+    --bs-gutter-y: 15px;
+  }
+}
+
+/*--------------------*/
+/* - Mission form     */
+/*--------------------*/
+.mission-wrap {
+  text-align: center;
+  background-image: url('../img/mission-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*--------------------*/
+/* - Mushroom Section */
+/*--------------------*/
+.msh-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+
+.msh-item {
+  width: calc(100% / 5 - 30px);
+  margin-inline: 15px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  .title {
+    margin-top: 20px;
+  }
+
+  .text {
+    margin-top: 15px;
+  }
+}
+
+.msh-item-img {
+  position: relative;
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  margin-inline: auto;
+  border-radius: 3px;
+
+  img {
+    @include objectFit;
+  }
+}
+
+@media (max-width: 1640px) {
+  .msh-wrap {
+    margin-bottom: -40px;
+  }
+
+  .msh-item {
+    width: calc(100% / 5 - 20px);
+    margin-inline: 10px;
+    margin-bottom: 40px;
+
+    .title {
+      margin-top: 15px;
+    }
+
+    .text {
+      margin-top: 10px;
+    }
+  }
+
+  .msh-item-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .msh-item {
+    width: calc(100% / 4 - 20px);
+  }
+}
+
+@media (max-width: 991px) {
+  .msh-item {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .msh-item {
+    width: calc(100% / 2 - 15px);
+    margin-inline: 7.5px;
+  }
+
+  .msh-item-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/*--------------------*/
+/* - Join Form        */
+/*--------------------*/
+.jn-section {
+  padding: 50px 100px;
+  background: var(--bg-1);
+  border-radius: var(--rd-1);
+}
+
+.jn-info {
+  .text {
+    margin-top: 20px;
+  }
+}
+
+.jn-form {
+  .input-placeholder {
+    background-color: var(--bg-1);
+  }
+
+  .btn {
+    min-width: unset !important;
+  }
+}
+
+
+@media (max-width: 1640px) {
+  .jn-section {
+    padding: 30px 50px;
+  }
+
+  .jn-info .text {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .jn-section {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .jn-info {
+    margin-bottom: 25px;
+  }
+}

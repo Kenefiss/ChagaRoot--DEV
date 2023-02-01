@@ -179,6 +179,7 @@ header.scrolled .h-wrap {
   margin-block: calc((var(--h-height) - var(--h-search-height)) / 2);
 
   i {
+    flex-shrink: 0;
     display: inline-block;
     line-height: 0;
   }
@@ -193,6 +194,10 @@ header.scrolled .h-wrap {
 
   input {
     width: 100%;
+  }
+
+  .btn-close {
+    flex-shrink: 0;
   }
 }
 

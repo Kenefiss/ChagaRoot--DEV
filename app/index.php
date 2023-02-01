@@ -54,8 +54,8 @@
                     </a>
                   </div>
                   <picture>
-                    <source srcset="img/hero-img.svg" type="image/jpg" media="(min-width:768px)">
-                    <source srcset="img/hero-mb-img.svg" type="image/jpg" media="(max-width:767px)">
+                    <source srcset="img/hero-img.svg" media="(min-width:768px)">
+                    <source srcset="img/hero-mb-img.svg" media="(max-width:767px)">
                     <img src="" alt="" loading="lazy">
                   </picture>
                 </div>

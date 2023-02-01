@@ -141,10 +141,11 @@ header.scrolled .h-wrap {-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.02);box-
 .h-logo img {display: block;max-width: 100%;}
 .h-search-wrap {position: fixed;z-index: 103;top: 0;left: 0;width: 100%;height: var(--h-height);background-color: var(--clr-white);-webkit-transform: translateY(-100%);transform: translateY(-100%);-webkit-transition: var(--transition-1);transition: var(--transition-1);}
 .h-search-inner {padding: 5px 25px;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;border: 1px solid var(--clr-grey-2);border-radius: var(--rd-1);--h-search-height: 60px;height: var(--h-search-height);margin-block: calc((var(--h-height) - var(--h-search-height)) / 2);}
-.h-search-inner i {display: inline-block;line-height: 0;}
+.h-search-inner i {-ms-flex-negative: 0;flex-shrink: 0;display: inline-block;line-height: 0;}
 .h-search-inner > * {margin-right: 15px;}
 .h-search-inner > *:last-child {margin-right: 0;}
 .h-search-inner input {width: 100%;}
+.h-search-inner .btn-close {-ms-flex-negative: 0;flex-shrink: 0;}
 .h-cabinet {position: relative;}
 .h-cabinet .h-btn div {position: relative;margin-left: 10px;padding-right: 25px;font-weight: 400;font-size: 16px;line-height: 1em;color: var(--clr-black);}
 .h-cabinet .h-btn div:before {content: "";position: absolute;top: 2px;right: 2px;width: 8px;height: 8px;border-right: 1px solid currentColor;border-bottom: 1px solid currentColor;-webkit-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: var(--transition-1);transition: var(--transition-1);}
@@ -340,9 +341,9 @@ h6,
 /*--------------------*/
 .text {font-size: 18px;line-height: 1.38em;font-weight: 400;color: var(--clr-text);--text-space: 15px;}
 .text * + :where(*) {margin-top: calc(var(--text-space) * 3);}
-.text * + :is(p, ul, ol, li) {margin-top: var(--text-space);}
+.text * + :is(p, ul, ol, li, h1, h2, h3, h4, h5, h6) {margin-top: var(--text-space);}
 .text :is(img, table, iframe, figure, picture, blockquote, .swiper-entry) + * {margin-top: calc(var(--text-space) * 3);}
-.text * + :is(.swiper-entry *) {margin-top: 0;}
+.text .swiper-entry > * * {margin-top: 0;}
 .text b {font-weight: 500;}
 .text b,
 .text span {color: var(--clr-org);}

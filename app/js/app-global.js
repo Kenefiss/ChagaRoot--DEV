@@ -124,6 +124,7 @@ jQuery(function($) {
     _functions.scrollWidth();
     $('html').addClass('overflow-menu');
     $(this).closest('header').addClass('open-search');
+    $(this).closest('header').find('.h-search-inner input').focus();
   });
 
   /* Close menu & search */

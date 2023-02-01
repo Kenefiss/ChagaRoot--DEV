@@ -45,8 +45,6 @@ jQuery(function($) {
   });
 
 
-
-
   // Validate email
   _functions.validateEmail = function(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -84,47 +82,6 @@ jQuery(function($) {
       }
     });
   }
-
-
-
-
-  // // if ($('.input.calendar').length) {
-  // //   $('.input.calendar').inputmask('datetime', {
-  // //     inputFormat: "dd.mm.yyyy",
-  // //     min: currentDay(),
-  // //     max: maxDay(50),
-  // //     showMaskOnHover: false,
-  // //     // "clearIncomplete": true,
-  // //     // outputFormat: "ddmmyyyy"
-  // //     "onincomplete": function() {
-  // //       $(this).closest('.input-field-wrapper').removeClass('value');
-  // //       $(this).val('');
-  // //     }
-  // //   });
-
-  // //   function currentDay() {
-  // //     let today = new Date();
-  // //     let dd = String(today.getDate()).padStart(2, '0');
-  // //     let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  // //     let yyyy = today.getFullYear();
-
-  // //     today = dd + '.' + mm + '.' + yyyy;
-  // //     // console.log(today);
-  // //     return today
-  // //   }
-
-  // //   function maxDay(days) {
-  // //     let today = new Date();
-  // //     let dd = String(today.getDate()).padStart(2, '0');
-  // //     let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  // //     let yyyy = today.getFullYear() + days;
-
-  // //     today = dd + '.' + mm + '.' + yyyy;
-  // //     // console.log(yyyy + 50);
-  // //     return today
-  // //   }
-  // // }
-
 
 
   //sumoselect
@@ -167,7 +124,6 @@ jQuery(function($) {
       $(this).closest('.input-field-wrapper').removeClass('value');
     }
   });
-
 
 
 });
