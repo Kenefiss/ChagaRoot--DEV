@@ -1,0 +1,250 @@
+/*--------------------*/
+/* - Archetype        */
+/*--------------------*/
+.steps-wrap {
+  max-width: 1084px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.steps-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.st-nav {
+  max-width: 324px;
+  width: 100%;
+  padding: 60px;
+  background-color: var(--bg-1);
+  border-radius: var(--rd-1);
+}
+
+.st-item {
+  display: flex;
+  align-items: center;
+  counter-increment: number;
+  --st-item-space: 50px;
+
+  &:first-child .st-item-num {
+    &::before {
+      display: none;
+    }
+  }
+
+  &+& {
+    margin-top: var(--st-item-space);
+  }
+
+  &.active~.st-item {
+    .st-item-num {
+      color: var(--clr-black);
+      border-color: var(--clr-grey-2);
+      background-color: var(--clr-white);
+
+      &::before {
+        background-color: var(--clr-grey-2);
+      }
+
+      i {
+        background-color: var(--clr-grey-2);
+      }
+    }
+  }
+}
+
+.st-item-num {
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: var(--clr-white);
+  border: 1px solid var(--clr-black);
+  background-color: var(--clr-black);
+  transition: var(--transition-1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 19px;
+    transform: translateY(-100%);
+    width: 1px;
+    height: var(--st-item-space);
+    background-color: var(--clr-black);
+    transition: var(--transition-1);
+  }
+
+  i {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: currentColor;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: var(--transition-1);
+
+    &::before {
+      content: counter(number);
+    }
+  }
+}
+
+.st-item-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--clr-black);
+}
+
+.st-tabs {
+  margin-left: 15px;
+  max-width: 670px;
+  width: 100%;
+}
+
+.st-tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.st-btn-wrap {
+  display: flex;
+  align-items: center;
+
+
+  .btn-primary {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .st-nav {
+    max-width: 280px;
+    padding: 30px;
+  }
+
+  .st-item {
+    --st-item-space: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .steps-inner {
+    display: block;
+  }
+
+  .st-nav {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .st-item {
+    --st-item-space: 50px;
+
+    &+& {
+      margin-top: 0;
+      margin-left: var(--st-item-space);
+    }
+
+    &.active {
+      .st-item-title {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .st-item-num {
+    margin-right: 0;
+
+    &::before {
+      left: -1px;
+      top: 50%;
+      transform: translate(-100%, -50%);
+      height: 1px;
+      width: var(--st-item-space);
+    }
+  }
+
+  .st-item-title {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    padding-inline: 15px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-1);
+  }
+
+  .st-tabs {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+/*--------------------*/
+/* - Arch Thanks Page */
+/*--------------------*/
+.arch-th-wrap {
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+  text-align: center;
+
+  .program-item {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+    text-align: left;
+    margin-top: 60px;
+  }
+
+  .btn-link {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .arch-th-wrap {
+    .text {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 1640px) {
+  .arch-th-wrap {
+    .program-item {
+      margin-top: 30px;
+    }
+
+    .btn-link {
+      margin-top: 30px;
+    }
+  }
+}

@@ -295,6 +295,44 @@ jQuery(function($) {
 
 
 
+  // Custom tabs
+  $(document).on('click', '.prev-tab', function() {
+    let activeItem = $('.st-nav').find('.st-item.active');
+    let tab = $('.st-tabs').find('.st-tab');
+    let i = activeItem.index();
+
+    tab.eq(i - 1).siblings('.st-tab:visible').stop().finish().fadeOut(function() {
+      tab.eq(i - 1).fadeIn(200);
+    });
+
+    if (!activeItem.is(':first-child')) {
+      activeItem.removeClass('active').prev().addClass('active');
+    }
+
+    $('html, body').animate({
+      scrollTop: $('.st-nav').offset().top - $('header').height() - 15
+    }, 1500);
+
+  });
+
+  $(document).on('click', '.next-tab', function() {
+    let activeItem = $('.st-nav').find('.st-item.active');
+    let tab = $('.st-tabs').find('.st-tab');
+    let i = activeItem.index();
+
+    tab.eq(i + 1).siblings('.st-tab:visible').stop().finish().fadeOut(function() {
+      tab.eq(i + 1).fadeIn(200);
+    });
+
+    if (!activeItem.is(':last-child')) {
+      activeItem.removeClass('active').next().addClass('active');
+    }
+
+    $('html, body').animate({
+      scrollTop: $('.st-nav').offset().top - $('header').height() - 15
+    }, 1500);
+  });
+
 
   //*==============
   //* OTHER JS    =

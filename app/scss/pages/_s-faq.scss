@@ -185,8 +185,12 @@
   }
 
   &.active {
-    i::after {
-      transform: translate(-50%, -50%);
+    i {
+      color: var(--clr-green);
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(-90deg);
+      }
     }
   }
 }

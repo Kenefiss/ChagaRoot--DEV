@@ -305,3 +305,21 @@ textarea.input+.input-placeholder {
     }
   }
 }
+
+@media (max-width: 767px) {
+  .ch-box-wrap {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .ch-box-entry {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

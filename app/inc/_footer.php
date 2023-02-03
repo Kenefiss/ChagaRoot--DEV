@@ -34,7 +34,7 @@
     </div>
     <div class="footer-bottom">
       <div class="footer-copy">
-        <div>© 2022 ChagaRoot Inc. All rights reserved.</div>
+        <div>© 2023 ChagaRoot Inc. All rights reserved.</div>
         <a href="privacy.php">Privacy Policy</a>
         <a href="privacy.php">Terms & Conditions</a>
       </div>

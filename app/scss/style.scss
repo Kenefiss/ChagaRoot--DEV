@@ -1,28 +1,29 @@
 @import "c-variables-mixins";
 
 
-// @import "style/s-animation";
-@import "style/pages/s-home";
+@import "style/s-animation";
+@import "pages/s-home";
+
+
 @import "style/s-product";
-@import "style/pages/s-blog";
-@import "style/pages/s-template";
-@import "style/pages/s-programs";
-
-@import "style/pages/s-contacts";
-@import "style/pages/s-checkout";
-
-@import "style/pages/s-faq";
-@import "style/pages/s-search";
 
 
+@import "pages/s-blog";
+@import "pages/s-template";
+@import "pages/s-programs";
+@import "pages/s-contacts";
+@import "pages/s-checkout";
+
+@import "pages/s-archetype";
+
+@import "pages/s-faq";
+@import "pages/s-search";
 
 
 @import "style/s-footer";
-
-
-
-
 @import "style/s-popups";
 @import "style/s-cookies";
 @import "style/s-cart";
-@import "style/pages/s-404";
+
+
+@import "pages/s-404";
