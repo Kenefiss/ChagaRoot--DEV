@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap);/*--------------------*/
 /* - CUSTOM PRELOADER */
 /*--------------------*/
-#loader-wrapper {position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: 9999;background-color: var(--clr-white);-webkit-animation: loader 1.4s linear;animation: loader 1.4s linear;-webkit-animation-iteration-count: 1;animation-iteration-count: 1;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
+#loader-wrapper {position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: 9999;background-color: var(--clr-white);-webkit-animation: loader 0.8s linear;animation: loader 0.8s linear;-webkit-animation-iteration-count: 1;animation-iteration-count: 1;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;}
 @-webkit-keyframes loader {
 0% {opacity: 1;}
 70% {opacity: 1;}

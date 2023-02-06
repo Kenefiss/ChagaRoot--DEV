@@ -3,7 +3,7 @@
 
 <head>
   <?php include 'inc/_top.php';?>
-  <title>ChangaRoot :: Program detail</title>
+  <title>ChangaRoot :: Program detail Config</title>
 
 </head>
 
@@ -62,32 +62,7 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="prd__detail--img">
-                            <img src="img/prg-detail-1.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--img">
-                            <img src="img/prg-detail-2.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--img">
-                            <img src="img/prg-detail-3.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--img">
-                            <img src="img/prg-detail-4.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--img">
-                            <img src="img/prg-detail-5.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--img">
-                            <img src="img/prg-detail-1.jpg" alt="">
+                            <img src="img/prg-detail-11.jpg" alt="">
                           </div>
                         </div>
                         <div class="swiper-slide">
@@ -120,32 +95,7 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="prd__detail--thumbs">
-                            <img src="img/prg-detail-small-1.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--thumbs">
-                            <img src="img/prg-detail-small-2.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--thumbs">
-                            <img src="img/prg-detail-small-3.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--thumbs">
-                            <img src="img/prg-detail-small-4.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--thumbs">
-                            <img src="img/prg-detail-small-5.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="prd__detail--thumbs">
-                            <img src="img/prg-detail-small-1.jpg" alt="">
+                            <img src="img/prg-detail-11.jpg" alt="">
                           </div>
                         </div>
                         <div class="swiper-slide">
@@ -179,12 +129,100 @@
               <div class="col-xl-6 col-lg-7 col-md-6">
                 <div class="prg__detail-info">
                   <h1 class="prg__detail--title title h3">
-                    The Warrior Cleanse
+                    The Thrive Program
                   </h1>
-                  <div class="prg__detail--desc text">
-                    The warrior has battled and won and has the confidence and discipline for the next level of health.
-                    As a “veteran” in consuming cleanses, you will enjoy the Warrior Cleanse program, which takes you on a thorough path from cleansing to nourishing, in order to achieve your thriving state. This complete program of almost a month (26 days) will take you from Cleansing with Liquid Elixirs ( Phase 1: 2 days), to Cleansing with Food ( Phase 2: 9 days), to a Thriving Program with foods that will nourish your body ( Phase 3: 15 days) for a better you.
+
+                  <div class="prg__detail--config">
+                    <div class="form-block">
+                      <div class="title h5">Enter zip code to view options in your area</div>
+                      <div class="input-field-wrapper">
+                        <input class="input" type="text" required>
+                        <div class="input-placeholder">Zip Code</div>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="title h5">Your meals</div>
+                      <div class="ch-box-wrap">
+                        <label class="ch-box-entry">
+                          <input type="radio" name="meals">
+                          <span>Breakfast</span>
+                        </label>
+                        <label class="ch-box-entry">
+                          <input type="radio" name="meals">
+                          <span>Lunch</span>
+                        </label>
+                        <label class="ch-box-entry">
+                          <input type="radio" name="meals">
+                          <span>Dinner</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="title h5">Program length</div>
+                      <div class="ch-box-wrap">
+                        <label class="ch-box-entry">
+                          <input type="radio" name="length">
+                          <span>2 Days (Thu - Fri)</span>
+                        </label>
+                        <label class="ch-box-entry">
+                          <input type="radio" name="length">
+                          <span>3 Days (Mon - Wed)</span>
+                        </label>
+                        <label class="ch-box-entry">
+                          <input type="radio" name="length">
+                          <span>5 Days (Mon - Fri)</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="title h5">Program schedule</div>
+                      <div class="ch-box-wrap">
+                        <label class="ch-box-entry">
+                          <input type="radio" name="schedule">
+                          <span>Weekly Subscription</span>
+                        </label>
+                        <label class="ch-box-entry">
+                          <input type="radio" name="schedule">
+                          <span>One-time Program</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="title h5">Supercharge your results (+$39/week)</div>
+                      <div class="ch-box-wrap">
+                        <label class="ch-box-entry">
+                          <input type="radio" name="supercharge">
+                          <span>Probiotic Coconut Kefir (3x)</span>
+                        </label>
+                        <label class="ch-box-entry">
+                          <input type="radio" name="supercharge">
+                          <span>Signature Green Smoothie (3x)</span>
+                        </label>
+                        <label class="ch-box-entry">
+                          <input type="radio" name="supercharge">
+                          <span>None</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-block">
+                      <div class="title h5">Start date</div>
+                      <div class="input-field-wrapper">
+                        <select class="SelectBox" name="question" placeholder="*">
+                          <option value="1">Activity 1</option>
+                          <option value="2">Activity 2</option>
+                          <option value="3">Activity 3</option>
+                          <option value="4">Activity 4</option>
+                          <option value="5">Activity 5</option>
+                          <option value="6">Activity 6</option>
+                        </select>
+                        <div class="input-placeholder">Chose yours</div>
+                      </div>
+                      <div class="text">
+                        You will receive deliveries: Saturday 8AM-8PM per week
+                      </div>
+                    </div>
                   </div>
+
                   <div class="prg__detail--spec text">
                     <p><strong>Categories: </strong>Best Sellers, Cleanses, Organic </p>
                     <p><strong>Tags: </strong>chaga, cleanse, juice, mushroom, organic, smoothie</p>
@@ -192,8 +230,7 @@
                   </div>
                   <div class="prg__detail--controls">
                     <div class="prg-price">
-                      <div class="old-price">$ <b>1132.20</b></div>
-                      <div class="price" id="prg-single-price">$ <b>1032.20</b></div>
+                      <div class="price" id="prg-single-price">$ <b>232.20</b>/week</div>
                     </div>
                     <div class="thumb-input-number">
                       <button type="button" class="decr">-</button>
@@ -224,7 +261,7 @@
           <div class="prg-tabs">
             <div class="prg-tabs-nav">
               <div class="is-active">Description</div>
-              <div>Reviews (<b>3</b>)</div>
+              <div>Reviews (<b>0</b>)</div>
             </div>
             <div class="prg-tabs-inner">
               <!-- 1 -->
@@ -259,21 +296,6 @@
                           Approximately 70% Cleanse – 30% Nourish with a strong state of autophagy.
                           Each day consists of juices, detox smoothies, and soups. Delicious plant-based raw foods entrées.
                           For examples of the plates you will be eating, see our Cleanse with Food menu.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="phase-item">
-                    <div class="phase-title">
-                      <span>Phase 3</span><b>Thrive Program</b>
-                    </div>
-                    <div class="phase-content">
-                      <div class="text">Duration: <b>15 days</b></div>
-                      <div class="text">
-                        <p>
-                          Approximately 30% Cleanse – 70% nourish with a mild state of autophagy.
-                          Functional food Meals that complement and rebuild the body system for optimum.
-                          For examples of the plates you will be eating, see our Thrive menu.
                         </p>
                       </div>
                     </div>
@@ -337,217 +359,14 @@
                     </div>
                   </div>
                   <div class="col">
-                    <div class="feedback-list">
-                      <div class="review-item">
-                        <div class="review-content">
-                          <div class="review-left">
-                            <div class="review-author">Tom</div>
-                            <div class="review-date">07.10.2021</div>
-                            <div class="review-rating" data-rate-star="3"></div>
-                          </div>
-                          <div class="review-right">
-                            <div class="text">
-                              Very friendly and knowledgeable staff! I had the tacos and I got a mixture of the Chaga and the Baja Street Taco.
-                            </div>
-                            <div class="review-item-bottom">
-                              <div class="review-btn btn-link">Answer</div>
-                              <div class="review-count">
-                                <img src="img/icons/comment.svg" alt="">
-                                <b>0</b> Comment
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-bottom-form">
-                          <div class="review-bottom-inner">
-                            <form class="form-block">
-                              <div class="row justify-content-between">
-                                <div class="col-sm-6">
-                                  <div class="input-field-wrapper">
-                                    <input type="text" class="input" required>
-                                    <div class="input-placeholder">Name*</div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div class="input-field-wrapper">
-                                    <input type="email" class="input" required>
-                                    <div class="input-placeholder">E-mail*</div>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <div class="input-field-wrapper">
-                                    <textarea class="input" required></textarea>
-                                    <div class="input-placeholder">Your message*</div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6 col-auto">
-                                  <button class="btn btn-primary" type="submit">
-                                    <i>
-                                      <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.1665 5.53325L13.7665 5.53325M13.7665 5.53325L9.2665 1.33325M13.7665 5.53325L9.26651 9.73325" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                    </i>
-                                    <b>Send</b>
-                                  </button>
-                                </div>
-                                <div class="col-sm-6 col-auto ml-auto text-right align-self-center">
-                                  <div class="btn-link">Cancel</div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
+                    <div class="feedback-list empty">
+                      <div class="review-empty">
+                        <img src="img/empty-review.svg" alt="">
+                        <p>
+                          There are no reviews yet.
+                        </p>
                       </div>
-
-                      <div class="review-item">
-                        <div class="review-content">
-                          <div class="review-left">
-                            <div class="review-author">Mary</div>
-                            <div class="review-date">07.19.2021</div>
-                            <div class="review-rating" data-rate-star="2"></div>
-                          </div>
-                          <div class="review-right">
-                            <div class="text">
-                              Very friendly and knowledgeable staff! I had the tacos and I got a mixture of the Chaga and the Baja Street Taco. My favorite was the Street taco and the Cole slaw. I'm not at all a slaw fan but this was delicious.
-                            </div>
-                            <div class="review-item-bottom">
-                              <div class="review-btn btn-link">Answer</div>
-                              <div class="review-count">
-                                <img src="img/icons/comment.svg" alt="">
-                                <b>0</b> Comment
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-bottom-form">
-                          <div class="review-bottom-inner">
-                            <form class="form-block">
-                              <div class="row justify-content-between">
-                                <div class="col-sm-6">
-                                  <div class="input-field-wrapper">
-                                    <input type="text" class="input" required>
-                                    <div class="input-placeholder">Name*</div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div class="input-field-wrapper">
-                                    <input type="email" class="input" required>
-                                    <div class="input-placeholder">E-mail*</div>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <div class="input-field-wrapper">
-                                    <textarea class="input" required></textarea>
-                                    <div class="input-placeholder">Your message*</div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6 col-auto">
-                                  <button class="btn btn-primary" type="submit">
-                                    <i>
-                                      <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.1665 5.53325L13.7665 5.53325M13.7665 5.53325L9.2665 1.33325M13.7665 5.53325L9.26651 9.73325" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                    </i>
-                                    <b>Send</b>
-                                  </button>
-                                </div>
-                                <div class="col-sm-6 col-auto ml-auto text-right align-self-center">
-                                  <div class="btn-link">Cancel</div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="review-item">
-                        <div class="review-content">
-                          <div class="review-left">
-                            <div class="review-author">Tom</div>
-                            <div class="review-date">07.10.2021</div>
-                            <div class="review-rating" data-rate-star="4"></div>
-                          </div>
-                          <div class="review-right">
-                            <div class="text">
-                              Very friendly and knowledgeable staff! I had the tacos and I got a mixture of the Chaga and the Baja Street Taco.
-                            </div>
-                            <div class="review-item-bottom">
-                              <div class="review-btn btn-link">Answer</div>
-                              <div class="review-count">
-                                <img src="img/icons/comment.svg" alt="">
-                                <b>2</b> Comment
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-bottom-form">
-                          <div class="review-bottom-inner">
-                            <form class="form-block">
-                              <div class="row justify-content-between">
-                                <div class="col-sm-6">
-                                  <div class="input-field-wrapper">
-                                    <input type="text" class="input" required>
-                                    <div class="input-placeholder">Name*</div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div class="input-field-wrapper">
-                                    <input type="email" class="input" required>
-                                    <div class="input-placeholder">E-mail*</div>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <div class="input-field-wrapper">
-                                    <textarea class="input" required></textarea>
-                                    <div class="input-placeholder">Your message*</div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-6 col-auto">
-                                  <button class="btn btn-primary" type="submit">
-                                    <i>
-                                      <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.1665 5.53325L13.7665 5.53325M13.7665 5.53325L9.2665 1.33325M13.7665 5.53325L9.26651 9.73325" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
-                                      </svg>
-                                    </i>
-                                    <b>Send</b>
-                                  </button>
-                                </div>
-                                <div class="col-sm-6 col-auto ml-auto text-right align-self-center">
-                                  <div class="btn-link">Cancel</div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                        <div class="review-reply-comment">
-                          <div class="review-content">
-                            <div class="review-left">
-                              <div class="review-author">Mary</div>
-                              <div class="review-date">07.10.2019</div>
-                            </div>
-                            <div class="review-right">
-                              <div class="text">
-                                Very friendly and knowledgeable staff! I had the tacos and I got a mixture of the Chaga and the Baja Street Taco.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="review-content">
-                            <div class="review-left">
-                              <div class="review-author">Mary</div>
-                              <div class="review-date">07.10.2019</div>
-                            </div>
-                            <div class="review-right">
-                              <div class="text">
-                                Very friendly and knowledgeable staff! I had the tacos and I got a mixture of the Chaga and the Baja Street Taco.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
                     </div>
-
-                    <div class="feedback-more-btn btn-link">Read more</div>
                   </div>
                 </div>
               </div>

@@ -27,10 +27,10 @@
           </div>
           <nav class="h-hero-links">
             <ul>
-              <li><a href="#">Functional Food Cleanse</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Archetype</a></li>
-              <li><a href="#">Shop</a></li>
+              <li><a href="food.php">Functional Food Cleanse</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="archetype.php">Archetype</a></li>
+              <li><a href="programs.php">Shop</a></li>
             </ul>
           </nav>
         </div>
@@ -145,15 +145,15 @@
     </div>
     <nav class="h-links">
       <ul>
-        <li><a href="#">Functional Food Cleanse</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Archetype</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Collection page</a></li>
-        <li><a href="#">Restaurant menu</a></li>
-        <li><a href="#">Ambassador</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="food.php">Functional Food Cleanse</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="archetype.php">Archetype</a></li>
+        <li><a href="programs.php">Shop</a></li>
+        <li><a href="template.php">Collection page</a></li>
+        <li><a href="archetype.php">Restaurant menu</a></li>
+        <li><a href="ambassador.php">Ambassador</a></li>
+        <li><a href="faq.php">FAQ</a></li>
+        <li><a href="contact.php">Contact us</a></li>
       </ul>
     </nav>
   </div>

@@ -157,3 +157,37 @@
     padding-top: 12px;
   }
 }
+
+
+/*--------------------*/
+/* - Programs Type 2  */
+/*--------------------*/
+.phase-wrap.type2 {
+
+  .phase-title {
+    cursor: unset;
+    padding-right: 0;
+
+    b:before {
+      display: none;
+    }
+  }
+
+  .phase-item {
+    padding: 30px;
+    background: var(--bg-1);
+    border-radius: var(--rd-1);
+  }
+
+  .phase-content {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .phase-wrap.type2 {
+    .phase-item {
+      padding: 15px;
+    }
+  }
+}

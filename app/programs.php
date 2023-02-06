@@ -67,7 +67,7 @@
                     </div>
                   </div>
                 </div>
-                <a class="btn btn-primary" href="program-detail.php">
+                <a class="btn btn-primary" href="program-detail-config.php">
                   <i>
                     <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1.1665 5.53325L13.7665 5.53325M13.7665 5.53325L9.2665 1.33325M13.7665 5.53325L9.26651 9.73325" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>

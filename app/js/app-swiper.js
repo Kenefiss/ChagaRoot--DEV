@@ -80,22 +80,22 @@ jQuery(function($) {
 
 
 
-  // Custom fraction
-  $('.custom-fraction').each(function() {
-    var $this = $(this),
-      $thisSwiper = $this.find('.swiper-container')[0].swiper;
+  $('.swiper-thumbs').each(function() {
 
-    $thisSwiper.on('slideChange', function() {
-      $this.closest('.section').find('.c-fraction-current').text(
-        function() {
-          if ($thisSwiper.realIndex < 100) {
-            return ($thisSwiper.realIndex + 1)
-          } else {
-            return $thisSwiper.realIndex + 1
-          }
-        }
-      )
-    });
+    if ($('.swiper-thumbs-top').length && $('.swiper-thumbs-bottom').length) {
+
+      let t = $(this);
+      let top = t.find('.swiper-thumbs-top>.swiper-container')[0].swiper,
+        bottom = t.find('.swiper-thumbs-bottom>.swiper-container')[0].swiper;
+      top.thumbs.swiper = bottom;
+      top.thumbs.init();
+      top.thumbs.update();
+
+      if (top.slides.length < 2) {
+        t.find('.swiper-thumbs-bottom').addClass('d-none')
+      }
+    }
   });
+
 
 });

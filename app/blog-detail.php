@@ -22,9 +22,9 @@
           <div class="row justify-content-center">
             <!-- page title -->
             <div class="col-xxl-8 col-xl-10">
-              <div class="title h3">
+              <h1 class="title h3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing dolor sit amet, consectetur adipiscing
-              </div>
+              </h1>
               <div class="blog-labels">
                 <div class="blog-label">
                   <img src="img/icons/icon-calendar.svg" alt="" loading="lazy">

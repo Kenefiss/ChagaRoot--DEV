@@ -59,7 +59,6 @@ jQuery(function($) {
 
 
 
-
   //*=====================================
   //* 02 FUNCTIONS CALC & SCROLL, RESIZE =
   //*=====================================
@@ -113,15 +112,12 @@ jQuery(function($) {
   //*============
   /* Open menu */
   $(document).on('click', '.h-burger', function() {
-    _functions.scrollWidth();
-
     $('html').addClass('overflow-menu');
     $(this).closest('header').addClass('open-menu');
   });
 
   /* Open search */
   $(document).on('click', '.h-search', function() {
-    _functions.scrollWidth();
     $('html').addClass('overflow-menu');
     $(this).closest('header').addClass('open-search');
     $(this).closest('header').find('.h-search-inner input').focus();
@@ -129,8 +125,6 @@ jQuery(function($) {
 
   /* Close menu & search */
   $(document).on('click', '.h-menu-close, .h-menu-overlay, .h-search-close', function() {
-    _functions.scrollWidth();
-
     $('html').removeClass('overflow-menu');
     $(this).closest('header').removeClass('open-menu');
     $(this).closest('header').removeClass('open-search');
@@ -161,19 +155,9 @@ jQuery(function($) {
 
 
 
-
   //*============
   //* 04 POPUPS =
   //*============
-  // Function check scroll width
-  _functions.scrollWidth = function() {
-    let scrWidth = window.innerWidth - $('body').offsetWidth + 'px';
-    $('body').css({
-      "paddingRight": scrWidth
-    });
-  }
-
-
   // Popups Functions
   let popupTop = 0;
   _functions.removeScroll = function() {
@@ -190,7 +174,6 @@ jQuery(function($) {
   _functions.openPopup = function(popup) {
     $('.popup-content').removeClass('active');
     $(popup + ', .popup-wrapper').addClass('active');
-    _functions.scrollWidth();
     _functions.removeScroll();
   };
   _functions.closePopup = function() {
@@ -199,9 +182,8 @@ jQuery(function($) {
     _functions.addScroll();
   };
 
-  // Close Zoom popup
+  // Close  popup
   $(document).on('click', '.popup-content .close-popup, .popup-content .layer-close', function(e) {
-    _functions.scrollWidth()
     e.preventDefault();
     _functions.closePopup();
   });
@@ -294,8 +276,7 @@ jQuery(function($) {
   });
 
 
-
-  // Custom tabs
+  // Archetype tabs
   $(document).on('click', '.prev-tab', function() {
     let activeItem = $('.st-nav').find('.st-item.active');
     let tab = $('.st-tabs').find('.st-tab');
@@ -334,10 +315,23 @@ jQuery(function($) {
   });
 
 
+  // Program tabs
+  $(document).on('click', '.prg-tabs-nav>div', function(e) {
+    let tab = $(this).closest('.prg-tabs').find('.prg-tab');
+    let i = $(this).index();
+
+    $(this).addClass('is-active').siblings().removeClass('is-active');
+    tab.eq(i).siblings('.prg-tab:visible').stop().finish().fadeOut(function() {
+      tab.eq(i).fadeIn(200);
+    });
+    e.preventDefault();
+  });
+
+
   //*==============
   //* OTHER JS    =
   //*==============
-  $(document).on('click', '.phase-title', function() {
+  $(document).on('click', '.phase-wrap:not(.type2) .phase-title', function() {
     $(this).toggleClass('is-active').siblings('.phase-content').slideToggle();
     $(this).closest('.phase-item').siblings().find('.phase-title').removeClass('is-active').siblings('.phase-content').slideUp();
   })
@@ -362,6 +356,72 @@ jQuery(function($) {
   }
   changeImageQuote()
 
+
+  // Rate Stars
+  $('.rate-stars').each(function(index) {
+    $(this).find('input').attr('name', 'star-' + index);
+
+    $($(this).find('input').get().reverse()).each(function(i) {
+      $(this).attr('id', 'star-' + index + '-' + i);
+
+      if (i == 0) {
+        $(this).addClass('star-clear')
+      }
+    });
+
+    $($(this).find('label').get().reverse()).each(function(i) {
+      $(this).attr('for', 'star-' + index + '-' + i);
+    });
+  });
+
+  $('.review-item .review-rating').each(function() {
+    let th = $(this);
+    let starRating = th.data("rate-star");
+
+    for (let i = 1; i <= 5; i++) {
+      th.append("<i></i>");
+    }
+
+    if (!starRating == '') {
+      th.addClass('selected')
+
+      $(th.find('i')).each(function() {
+        if ($(this).index() + 1 == starRating) {
+          $(this).addClass('checked-star')
+        }
+      });
+    }
+  });
+
+  $(document).on('click', '.review-item .review-btn', function() {
+    let slideForm = $(this).parents('.review-item').find('.review-bottom-form');
+    slideForm.slideToggle();
+  });
+
+
+  //*=====================
+  //* 09 DYNAMIC LOAD JS =
+  //*=====================
+  _functions.loadFileAsync = (url) => {
+    return new Promise((resolve, reject) => {
+      if (url) {
+        let script = document.createElement("script");
+        script.src = url;
+        document.body.appendChild(script);
+        resolve(true);
+      } else {
+        reject(false);
+      }
+    });
+  };
+
+  if (winW > 1200) {
+    window.addEventListener("load", async () => {
+      try {
+        await _functions.loadFileAsync("js/vendors/SmoothScroll.min.js");
+      } catch (err) {} finally {}
+    });
+  }
 
 
 

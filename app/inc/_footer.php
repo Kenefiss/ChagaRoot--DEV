@@ -6,12 +6,12 @@
           <img src="img/logo-white.svg" alt="" loading="lazy">
         </a>
         <ul class="footer-links">
-          <li><a href="#">Functional Food Cleanse</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Archetype</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="food.php">Functional Food Cleanse</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="archetype.php">Archetype</a></li>
+          <li><a href="programs.php">Shop</a></li>
+          <li><a href="blog.php">Blog</a></li>
+          <li><a href="contact.php">Contact us</a></li>
         </ul>
       </div>
       <div class="footer-right">
