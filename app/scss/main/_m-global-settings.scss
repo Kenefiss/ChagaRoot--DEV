@@ -76,6 +76,12 @@ html.overflow-menu body {
 
 .section {
   position: relative;
+  opacity: 0;
+  transition: ease-in .5s;
+
+  &.animated {
+    opacity: 1;
+  }
 }
 
 .sec-decor {

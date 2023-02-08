@@ -3,15 +3,21 @@
 //*========================================
 //* 02 FUNCTIONS CALC & RESIZE, SCROLL    =
 //*========================================
-//* 03 HEADER                             =
+//* 03 ANIMATION                          =
 //*========================================
-//* 04 POPUPS                             =
+//* 04 HEADER                             =
 //*========================================
-//* 05 KEY FOCUS                          =
+//* 05 POPUPS                             =
 //*========================================
-//* 06 TABS, ACCORDION, MORE-TEXT, TABLE  =
+//* 06 KEY FOCUS                          =
 //*========================================
-//* OTHER JS                           =
+//* 07 TABS, ACCORDION, MORE-TEXT, TABLE  =
+//*========================================
+//* OTHER JS                              =
+//*========================================
+//* CABINET                               =
+//*========================================
+//* DYNAMIC LOAD JS                       =
 //*========================================
 
 
@@ -107,8 +113,35 @@ jQuery(function($) {
 
 
 
+  //*===============
+  //* 03 Animation =
+  //*===============
+  const animateBlock = document.querySelectorAll('.section');
+
+  const observerOptions = {
+    root: null,
+    threshold: 0,
+    rootMargin: (window.innerWidth > 767) ? "-15%" : "-10%"
+  };
+
+  const observerFunction = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      // console.log(entry.target)
+      entry.target.classList.add('animated')
+      observer.unobserve(entry.target)
+    })
+
+  }, observerOptions);
+
+  animateBlock.forEach(block => {
+    observerFunction.observe(block)
+  });
+
+
+
   //*============
-  //* 03 HEADER =
+  //* 04 HEADER =
   //*============
   /* Open menu */
   $(document).on('click', '.h-burger', function() {
@@ -156,7 +189,7 @@ jQuery(function($) {
 
 
   //*============
-  //* 04 POPUPS =
+  //* 05 POPUPS =
   //*============
   // Popups Functions
   let popupTop = 0;
@@ -221,7 +254,7 @@ jQuery(function($) {
 
 
   //*================
-  //* 05  KEY FOCUS =
+  //* 06  KEY FOCUS =
   //*================
   // Detect if user is using keyboard tab-button to navigate
   // with 'keyboard-focus' class we add default css outlines
@@ -246,7 +279,7 @@ jQuery(function($) {
 
 
   //*=====================
-  //* 06 TABS, ACCORDION =
+  //* 07 TABS, ACCORDION =
   //*=====================
   // tabs
   $(document).on('click', '.tab-title', function() {
@@ -399,9 +432,26 @@ jQuery(function($) {
   });
 
 
-  //*=====================
-  //* 09 DYNAMIC LOAD JS =
-  //*=====================
+  //*==========
+  //* CABINET =
+  //*==========
+  $(document).on('click', '.added-card-delete', function() {
+    $(this).closest('.added-card').remove();
+  });
+
+  $(document).on('click', '.ord-num', function() {
+    $(this).closest('.ord-item').toggleClass('is-active');
+    $(this).closest('.ord-item').find('.ord-item-toggle').slideToggle();
+  });
+
+
+
+
+
+
+  //*==================
+  //* DYNAMIC LOAD JS =
+  //*==================
   _functions.loadFileAsync = (url) => {
     return new Promise((resolve, reject) => {
       if (url) {
@@ -422,7 +472,5 @@ jQuery(function($) {
       } catch (err) {} finally {}
     });
   }
-
-
 
 });

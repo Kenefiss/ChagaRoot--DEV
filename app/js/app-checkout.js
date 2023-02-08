@@ -112,7 +112,7 @@ jQuery(function($) {
       total += +$(this).data('price') * +$(this).find('.thumb-input-number input').val();
     });
 
-    $('#cart-total-price b').html(total);
+    $('#cart-total-price b').html(total.toFixed(2));
     $('.h-cart>b').html(product.length);
 
 
@@ -164,25 +164,25 @@ jQuery(function($) {
 
   // checkout calculate
   _functions.calcTotalCheckoutPrice = function() {
-    let allSummProduct = 0;
+    let allSumProduct = 0;
     let discountProduct = !$('.order-discount').hasClass('d-none') ? +$('#discount-price').text() : 0;
 
 
     $('.checkout_items .js-checkout-product').each(function() {
-      allSummProduct += +$(this).data('price') * +$(this).find('.thumb-input-number input').val();
+      allSumProduct += +$(this).data('price') * +$(this).find('.thumb-input-number input').val();
     });
 
     // Subtotal
-    $('#all-product-price').text(allSummProduct.toFixed(2));
+    $('#all-product-price').text(allSumProduct.toFixed(2));
 
 
-    let totalPrice = allSummProduct - discountProduct;
+    let totalPrice = allSumProduct - discountProduct;
 
     $('#total-price').text(totalPrice.toFixed(2));
 
 
     //show empty cart message
-    if (allSummProduct === 0) {
+    if (allSumProduct === 0) {
       // do something
     }
 

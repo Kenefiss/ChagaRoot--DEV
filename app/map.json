@@ -3,15 +3,232 @@
     {
       "id": 1,
       "dataRel": "map",
-      "dataCity": 1,
+      "dataProvince": 1,
+      "dataLat": 49.956571,
+      "dataLng": 36.361923,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 2,
+      "dataRel": "map",
+      "dataProvince": 1,
+      "dataLat": 49.9806,
+      "dataLng": 36.2588,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 3,
+      "dataRel": "map",
+      "dataProvince": 2,
+      "dataLat": 46.416456,
+      "dataLng": 30.726150,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 4,
+      "dataRel": "map",
+      "dataProvince": 3,
+      "dataLat": 47.8523,
+      "dataLng": 35.1046,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 5,
+      "dataRel": "map",
+      "dataProvince": 4,
+      "dataLat": 50.3751,
+      "dataLng": 30.8855,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 6,
+      "dataRel": "map",
+      "dataProvince": 4,
+      "dataLat": 50.4318,
+      "dataLng": 30.3563,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 7,
+      "dataRel": "map",
+      "dataProvince": 5,
       "dataLat": 49.82418285,
       "dataLng": 23.92810464,
       "dataImg": "img/marker.png",
-      "dataImgMobile": "img/marker-mobile.png",
-      "address": "Львів",
-      "street": "вулиця Тершаковців, 2А",
-      "phone": "<p>+1 702-992-3453</p><p>+1 402-459-4534</p>",
-      "email": "Chagaroot@gmail.com"
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 8,
+      "dataRel": "map",
+      "dataProvince": 6,
+      "dataLat": 48.4962108,
+      "dataLng": 32.2229352,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 9,
+      "dataRel": "map",
+      "dataProvince": 7,
+      "dataLat": 51.5336,
+      "dataLng": 31.2672,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 10,
+      "dataRel": "map",
+      "dataProvince": 8,
+      "dataLat": 50.9083,
+      "dataLng": 34.8438,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 11,
+      "dataRel": "map",
+      "dataProvince": 9,
+      "dataLat": 48.9497,
+      "dataLng": 24.6864,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 12,
+      "dataRel": "map",
+      "dataProvince": 10,
+      "dataLat": 50.7442,
+      "dataLng": 25.3875,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 13,
+      "dataRel": "map",
+      "dataProvince": 11,
+      "dataLat": 49.561995,
+      "dataLng": 34.515542,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 14,
+      "dataRel": "map",
+      "dataProvince": 12,
+      "dataLat": 49.440209,
+      "dataLng": 32.020855,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 15,
+      "dataRel": "map",
+      "dataProvince": 13,
+      "dataLat": 46.667241,
+      "dataLng": 32.631256,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 16,
+      "dataRel": "map",
+      "dataProvince": 14,
+      "dataLat": 49.529539,
+      "dataLng": 25.605783,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 17,
+      "dataRel": "map",
+      "dataProvince": 15,
+      "dataLat": 48.479106,
+      "dataLng": 35.002333,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 18,
+      "dataRel": "map",
+      "dataProvince": 15,
+      "dataLat": 47.888676,
+      "dataLng": 33.375357,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 19,
+      "dataRel": "map",
+      "dataProvince": 15,
+      "dataLat": 48.523140820942416,
+      "dataLng": 35.08113349842867,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 20,
+      "dataRel": "map",
+      "dataProvince": 16,
+      "dataLat": 49.279870,
+      "dataLng": 28.474487,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 21,
+      "dataRel": "map",
+      "dataProvince": 17,
+      "dataLat": 47.102929,
+      "dataLng": 37.629041,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 22,
+      "dataRel": "map",
+      "dataProvince": 18,
+      "dataLat": 49.433355339498775,
+      "dataLng": 27.02130397667595,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
+    },
+    {
+      "id": 23,
+      "dataRel": "map",
+      "dataProvince": 19,
+      "dataLat": 46.958350586186484,
+      "dataLng": 32.07123988063295,
+      "dataImg": "img/marker.png",
+      "dataImgActive": "img/marker.png",
+      "dataString": " <div class='info-box-inner'><i></i><div class='info-box-img'><img src='img/dealer-marker-img.jpg' alt=''></div><div class='info-box-text'><div class='contact-item top-info'><div class='contact-img'><img src='img/marker.png' alt=''></div><div class='contact-info'><div class='dealers-name'>ТОВ «Автомобільний дім Львів»</div><div class='dealers-address'>Львів, вул. Городоцька, 282А</div></div></div><div class='contact-item'><div class='contact-img'><img src='img/icon-time.svg' alt=''></div><div class='contact-info'><p>Понеділок - П'ятниця: 9:00 - 19:00 год</p><p>Субота: 9:30 - 15:00 год</p><p>Сб-Нд: Вихідний</p> </div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-tel.svg' alt=''></div><div class='contact-info'><p><a href='tel:0322952233'>(032) 295-22-33</a></p><p><a href='tel:0676729700'>(067) 672-97-00</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-email.svg' alt=''></div><div class='contact-info'><p><a href='mailto:avtodim.sales@gmail.com'>avtodim.sales@gmail.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-web.svg' alt=''></div><div class='contact-info'><p><a href='www.haval-lviv.com' target='_blank'>www.haval-lviv.com</a></p></div> </div><div class='contact-item'><div class='contact-img'><img src='img/icon-place.svg' alt=''></div><div class='contact-info'><p><a href='https://www.google.com/mapsdir//%D0%B3%D1%83%D0%B3%D0%BB+%D0%BA%D0%B0%D1%80%D1%82%D0%B0+haval/@49.8072739,23.8956732,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x473ae73544ce9157:0x4217bc594989b318!2m2!1d23.928051!2d49.8241608' target='_blank'>Переглянути на карті</a></p></div></div></div></div>"
     }
   ]
 }

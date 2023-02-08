@@ -339,6 +339,10 @@ h6,
   }
 }
 
+.text *:first-child img {
+  margin-top: 0;
+}
+
 @media(min-width: 1200px) {
   .text a:not(.btn):hover {
     text-decoration-color: currentColor;

@@ -77,7 +77,7 @@
             </div>
           </div>
 
-          <div class="contact-block" data-map-json="map.json">
+          <div class="contact-block" data-link="map.json">
             <div class="row justify-content-between">
               <div class="col-xl-6 order-1 order-xl-0">
                 <div class="ct-block">
@@ -161,7 +161,7 @@
               </div>
               <div class="col-xl-5 ">
                 <div class="ct-map">
-                  <div class="map" data-xs-zoom="" data-zoom=""></div>
+                  <div class="map" data-lat data-lng data-xs-zoom="" data-zoom="" data-cluster-img="img/marker.png"></div>
                 </div>
               </div>
             </div>

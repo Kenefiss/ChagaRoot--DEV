@@ -150,6 +150,10 @@
   }
 }
 
+.open-popup {
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .popup-container {
     .btn-close {
